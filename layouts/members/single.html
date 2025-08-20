@@ -1,0 +1,88 @@
+{{- define "content" -}}
+
+{{ $order := slice "google_scholar" "orcid" "linkedin" "dblp" "github" "personal_page" }}
+{{ $icons := dict
+  "google_scholar" (dict "icon" "google_scholar"    )
+  "orcid"      (dict "icon" "fa-brands fa-orcid fa-xl"                 "colour" "black"   )
+  "linkedin"        (dict "icon" "fa-brands fa-linkedin fa-xl"         "colour" "#0077B5"     )
+  "dblp"        (dict "icon" "dblp"            )                        
+  "github"             (dict "icon" "fa-brands fa-github fa-xl"       "colour" "black"     )
+  "personal_page" (dict "icon" "fa-solid fa-user fa-xl"          "colour" "tomato"     )
+}}
+
+<style>
+  .google_scholar {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('/icons/google_scholar.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+  .dblp {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('/icons/dblp.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+</style>
+
+
+<div style="display: flex; flex-direction: column; max-width: 1200px; margin: 2rem auto 5rem auto;">
+  <!-- This is head -->
+  <div style="display: grid; 
+              max-width: 100%; 
+              grid-template-columns: 200px 300px;
+              column-gap: 2reml;
+              text-align: center;">
+
+    <!-- show avatar -->
+    <div   style="grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;">
+          <img src="/{{ .Params.avatar }}" alt="{{ .Params.name }}"
+             style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover;">
+    </div>
+
+    <!-- show name -->
+    <h1 style="grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            font-size: 28px;">
+      {{ .Params.name }}
+    </h1>
+
+    <!-- show social icon -->
+    <div style="grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            display: flex; 
+            gap: 12px;">
+      {{ range $key := $order }}
+        {{ $url := index $.Params $key }}
+        {{ with $url }}
+          {{ $meta := index $icons $key }}
+          <a href="{{ . }}" target="_blank" rel="noopener">
+            <i class="{{ $meta.icon }}" style="color: {{ $meta.colour }};"></i>
+          </a>
+        {{ end }}
+      {{ end }}
+     </div>
+
+   </div>
+
+
+  <div>
+    <p style="text-align: left;">
+      {{ .Content}}
+      </p>
+  </div>
+
+</div>
+{{- end -}}

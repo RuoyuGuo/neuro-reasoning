@@ -1,7 +1,11 @@
 {{ define "content" }}
 <div style="display: flex; flex-direction: column; max-width: 1200px; margin: 2rem auto; padding: 0 1rem;">
 
-  <h2 style="text-align: left;">{{ .Title }}</h2>
+  <h2 style="text-align: left; width: 100%">{{ .Title }}</h2>
+
+  {{ with .Params.people }}  
+    <p style="text-align: left"><strong>Studied by: </strong>{{ . }}</p>
+  {{ end }}
 
   <div style="max-width: 800px; margin: 0 auto; text-align: left; line-height: 1.8; font-size: 1rem; color: #333;">
     {{ .Content }}
