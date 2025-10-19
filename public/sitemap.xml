@@ -4,25 +4,13 @@
     <loc>http://localhost:1313/members/faculty/yang/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/research/r1/</loc>
+    <loc>http://localhost:1313/research/nuseg/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/members/faculty/morri/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/research/r1-copy/</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/research/r1-copy-5/</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/research/r1-copy-4/</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/research/r1-copy-3/</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/research/r1-copy-2/</loc>
+    <loc>http://localhost:1313/research/enh/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/news/</loc>

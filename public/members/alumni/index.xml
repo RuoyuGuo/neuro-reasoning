@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>All Members - Deep Learning Lab</title>
+    <title>Our Alumni - Deep Learning Lab</title>
     <link>http://localhost:1313/members/alumni/</link>
     <description>Deep Learning Lab</description>
     <generator>Hugo 0.148.2 &amp; FixIt v0.4.0-alpha-20250721024521-a1cd700b</generator>

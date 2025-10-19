@@ -1,22 +1,52 @@
-{{ define "content" }}
+{{- define "content" -}}
+<div style="max-width: 1200px; margin: 2rem auto; padding: 0 1rem;">
 
+  <!-- Title + optional intro from _index.md content -->
+  <div style="text-align: center; margin-bottom: 2rem;">
+    <h1 style="margin-bottom: 0.5rem;">{{ .Title }}</h1>
+    {{ with .Content }}
+      <div style="color:#555; font-size:0.95rem; line-height:1.7; max-width: 900px; margin: 0 auto;">
+        {{ . }}
+      </div>
+    {{ end }}
+  </div>
 
-<div style="display: flex; flex-direction: column; max-width: 1200px; margin: 2rem auto 5rem auto;">
-  <h2>
-    {{ .Params.welcome_intro }}
-  </h2>
+  {{ $items := .Params.news }}
+  {{ if $items }}
+    {{ $acc := slice }}
+    {{ range $it := $items }}
+      {{ $raw := index $it "date" }}
+      {{ $iso := replaceRE `^(\d{2})/(\d{4})$` `${2}-${1}-01` $raw }}
+      {{ $t := time $iso }}
+      {{ $acc = $acc | append (dict "t" $t "date" $raw "content" (index $it "content")) }}
+    {{ end }}
+    {{ $acc = sort $acc "t" "desc" }}
 
-  <div style="max-width: 1000px; margin: 2rem auto;">
-
-    <ul style="text-align: left; font-size: 1rem; line-height: 1.8; color: #444;">
-      {{ range sort .Pages "Date" "desc" }}
-        <li style="margin-bottom: 1rem;">
-          <strong>{{ .Date.Format "02/01/2006" }}</strong> — 
-          <a href="{{ .RelPermalink }}" style="color: #1a0dab;">{{ .Title }}</a><br />
-          <span style="font-size: 0.9rem; color: #777;">{{ .Summary }}</span>
+    <!-- News list -->
+    <ul style="max-width: 900px; margin: 0 auto; padding-left: 1.5rem; font-size: 1rem; line-height: 1.75; color: #333;">
+      {{ range $acc }}
+        <li style="margin: 0.3rem 0;">
+          <span style="color: #777; white-space: nowrap;">{{ dateFormat "01/2006" .t }}</span> —
+          <span>{{ .content | safeHTML }}</span>
         </li>
       {{ end }}
     </ul>
-  </div>
+
+  {{ else }}
+    {{ $pages := .Pages | where "Draft" "ne" true | where "Date" "<=" now | sort "Date" "desc" }}
+    {{ if gt (len $pages) 1 }}
+      <ul style="max-width: 900px; margin: 0 auto; padding-left: 1.5rem; font-size: 1rem; line-height: 1.75; color: #333;">
+        {{ range $pages }}
+          <li>
+            <span style="color:#777;">{{ .Date.Format "01/2006" }}</span> —
+            <a href="{{ .RelPermalink }}" style="text-decoration:none; color:#0066cc;">{{ .Title }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    {{ else }}
+      <p style="text-align:center; color:#777;">No news yet. Stay tuned!</p>
+    {{ end }}
+  {{ end }}
+
 </div>
-{{ end }}
+{{- end -}}

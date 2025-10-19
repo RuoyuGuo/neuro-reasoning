@@ -58,4 +58,3 @@ theme = 'FixIt'
     name = "Projects"
     url = 'projects/'
     weight = 40
-

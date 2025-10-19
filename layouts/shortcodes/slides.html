@@ -1,0 +1,20 @@
+{{/* layouts/shortcodes/slides_list.html */}}
+{{- $pattern := default "(?i)^slide[0-9]+\\.(jpg|jpeg|png|webp)$" (.Get "pattern") -}}
+{{- $maxWidth := default "900px" (.Get "maxWidth") -}}
+{{- $imgs := .Page.Resources.Match $pattern | sort "Name" -}}
+
+{{- if not $imgs -}}
+<p style="color:#888">No slides found. (pattern: <code>{{ $pattern }}</code>)</p>
+{{- else -}}
+<div style="max-width: {{ $maxWidth }}; margin: 1rem auto;">
+  {{- range $imgs }}
+    <figure style="margin: 0 0 1rem 0;">
+      <img src="{{ .RelPermalink }}" alt="{{ .Name }}"
+           style="width:100%; height:auto; display:block; object-fit:contain;">
+      <figcaption style="font: 0.9rem/1.4 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color:#666; margin-top:.25rem;">
+        {{ .Name }}
+      </figcaption>
+    </figure>
+  {{- end }}
+</div>
+{{- end }}
