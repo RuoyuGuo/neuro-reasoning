@@ -4,7 +4,43 @@
     <loc>http://localhost:1313/members/faculty/yang/</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/research/mri/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/imb/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/cme/cme/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/cva/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/gm/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/stnorm/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/maceth/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/mia/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/medfair/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/pcdef/</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/research/nuseg/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/rip/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/tts/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/members/faculty/morri/</loc>
@@ -13,70 +49,34 @@
     <loc>http://localhost:1313/research/enh/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/news/</loc>
-    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/members/alumni/cong/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/news/20250801/</loc>
-    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/members/alumni/lei/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/members/alumni/ray/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/news/20250730/</loc>
-    <lastmod>2025-07-30T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/news/20250729/</loc>
-    <lastmod>2025-07-29T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/news/20250728/</loc>
-    <lastmod>2025-07-28T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/news/20250727/</loc>
-    <lastmod>2025-07-27T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/news/20250726/</loc>
-    <lastmod>2025-07-26T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/news/20250725/</loc>
-    <lastmod>2025-07-25T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/members/alumni/</loc>
+    <loc>http://localhost:1313/members/alumni/xiekunzi/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/members/students/haonan/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/members/students/jiaqi/</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/members/students/qingchen/</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/members/students/ruoyu-copy-2/</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/members/students/ruoyu-copy-3/</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/members/students/ruoyu-copy-4/</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/members/students/ruoyu-copy/</loc>
-  </url>
-  <url>
     <loc>http://localhost:1313/members/students/ruoyu/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/members/students/yiwen/</loc>
+    <loc>http://localhost:1313/members/students/shenyang_qian/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/members/students/this-is-tammy/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/members/students/wenbin/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/members/students/yongze_wang/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/projects/</loc>
@@ -85,7 +85,16 @@
     <loc>http://localhost:1313/categories/</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/research/da/</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/members/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/news/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/members/alumni/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/members/faculty/</loc>
@@ -98,5 +107,8 @@
   </url>
   <url>
     <loc>http://localhost:1313/tags/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/</loc>
   </url>
 </urlset>

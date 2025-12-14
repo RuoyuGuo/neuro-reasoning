@@ -1,28 +1,31 @@
 {{- define "content" -}}
-<div style="max-width: 1200px; margin: 2rem auto 5rem auto;">
+<div style="display: flex; flex-direction: column; max-width: 1200px; margin: 2rem auto 5rem auto;">
 
-  <!-- Title -->
   <h2 style="text-align: center; margin-bottom: 2rem;">
     {{ .Title }}
   </h2>
 
-  <!-- Grid of alumni cards -->
-  <div style="
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-    max-width: 1000px;
-    margin: 0 auto;
-  ">
-    {{ range .Params.alumni }}
-      <div style="border: 1px solid #eaeaea; border-radius: 12px; padding: 1rem 1.1rem;">
-        <div style="font-weight: 600; font-size: 1.05rem;">
-          {{ .name }}
-        </div>
-        {{ if .note }}
-          <div style="margin-top: .25rem; color: #555; font-size: .95rem;">
-            {{ .note }}
-          </div>
+  <!-- #PHD student -->
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;  margin-top: 1rem">
+    {{ range sort (where .Pages "Params.group" "alumni") "Params.enrol" }}
+      <div style="
+      flex: 1 1 21%;   /* prefer 220px, but shrink/grow if needed */
+      max-width: 240px;  /* no more than 4 per row (if container ~1000px) */
+      min-width: 220px;  /* avoid avatar being squashed */
+      text-align: center;
+    ">
+        <img src="/{{ .Params.avatar }}" alt="{{ .Params.name }}"
+             style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover;">
+        <h3 style="margin: 0.5rem 0; color: #88aedc;">
+          <a  href="{{ .RelPermalink }}">  
+            {{ .Params.name }}
+          </a> 
+        </h3>
+        <p style="font-size: 0.95rem; color: #555; font-weight: 500;">
+          {{ .Params.role }}
+        </p>
+        {{ with .Params.description }}
+          <p style="font-size: 0.85rem; color: #777;">{{ . }}</p>
         {{ end }}
       </div>
     {{ end }}

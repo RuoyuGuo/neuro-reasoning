@@ -139,7 +139,7 @@
   </script>
 {{ end }}
 
-{{ with sort .Params.papers "year" "desc" }}
+{{ with .Params.papers }}
   <section style="margin-top:2.5rem;">
     <h2>Related Papers</h2>
 
@@ -158,7 +158,7 @@
     </style>
 
     <div class="paper-list">
-      {{ range $i, $p := . }}
+        {{ range $i, $p := sort . "year" "desc" }}
         <article class="paper-card">
           <div class="paper-idx">[ {{ add $i 1 }} ]</div>
           <div>

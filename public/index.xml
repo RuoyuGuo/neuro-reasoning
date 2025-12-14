@@ -9,53 +9,74 @@
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>http://localhost:1313/members/faculty/yang/</link>
+      <title>Brain MRI analysis</title>
+      <link>http://localhost:1313/research/mri/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/members/faculty/yang/</guid>
-      <description>&lt;p&gt;I am an ARC Future Fellow, Scientia Associate Professor and Associate Head of School (Research) in the &lt;strong&gt;&lt;a href=&#34;https://www.unsw.edu.au/engineering&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;School of Computer Science and Engineering&lt;/a&gt;&lt;/strong&gt;, Faculty of Engineering, UNSW Sydney. I graduated with a BEng in Computer Engineering from &lt;strong&gt;&lt;a href=&#34;https://www.ntu.edu.sg/&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;Nanyang Technological University&lt;/a&gt;&lt;/strong&gt;, Singapore, and obtained a PhD degree in Computer Science from the &lt;strong&gt;&lt;a href=&#34;https://www.sydney.edu.au/engineering/schools/school-computer-science.html&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;University of Sydney&lt;/a&gt;&lt;/strong&gt; in 2013.&lt;/p&gt;&#xA;&lt;p&gt;I received the highly competitive Australian Research Council (ARC) Discovery Early Career Researcher Award (DECRA) in 2015, and was an ARC DECRA Fellow at the University of Sydney before joining UNSW as a Lecturer in 2018. I also received a Dean&amp;rsquo;s Research Award from the Faculty of Engineering, University of Sydney in 2017. In 2019, I was awarded the prestigious &lt;strong&gt;&lt;a href=&#34;https://www.arc.gov.au/funding-research/funding-outcome/selection-outcome-reports/selection-report-future-fellowships-2019&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;ARC Future Fellowship&lt;/a&gt;&lt;/strong&gt;, which provides support for excellent mid-career researchers to undertake high quality research in areas of national and international benefit. In 2020, I was awarded a Scientia Fellowship from UNSW, which supports career development of outstanding researchers. In 2021, I received two grant awards from Google and the Faculty of Engineering Research Excellence Award. In 2022, I received a large NHMRC Ideas Grant on computational brain imaging led by my collaborator at &lt;strong&gt;&lt;a href=&#34;https://www.mq.edu.au/research/research-centres-groups-and-facilities/groups/computational-neurosurgery-lab&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;Macquarie University&lt;/a&gt;&lt;/strong&gt;. In 2023, I received a Women in AI award for AI in Innovation in the Asia-pacific region. I also received an ARC Linkage Project Grant on rip current detection in collaboration with Surf Life Saving Australia, and an Award for Inclusion Research from Google. In 2024, I am one of the chief investigators receiving a large ARC grant to establish the Industrial Transformation Research Hub for Human-Robot Teaming.&lt;/p&gt;&#xA;</description>
+      <guid>http://localhost:1313/research/mri/</guid>
+      <description>&lt;p&gt;Brain MRI analysis plays a central role in neuro-oncology, providing multi-sequence (e.g., T1, T2, FLAIR, T1ce) information for detecting and segmenting brain tumours and guiding treatment planning. However, real-world clinical workflows often face missing or incrementally acquired modalities, which can degrade segmentation performance and make retraining impractical. In our recent work (MICCAI 2025), we propose a domain-incremental framework that uses a replay buffer, a cross-patient hypergraph segmentation network, and a Tversky-aware contrastive loss to learn from newly available MRI modalities without forgetting previously learned ones and to better handle inter-modality imbalance.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Future Direction&lt;/strong&gt; Promising directions include extending extending this line of work to richer multimodal settings (e.g., combining MRI with clinical and genomic data, in line with our broader multimodal research) and ultimately developing brain MRI foundation models that can be continually adapted across institutions, protocols, and tasks while remaining robust to missing data and domain shifts.&lt;/p&gt;&#xA;</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/members/faculty/morri/</link>
+      <title>Class Imbalanced Learning</title>
+      <link>http://localhost:1313/research/imb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/members/faculty/morri/</guid>
-      <description>&lt;p&gt;My Ph.D. dissertation (1996) investigated The Role of Abductive Reasoning within the Process of Belief Revision (click on this link to view the abstract and, if you wish, download a gzip&amp;rsquo;ed postscript version). It deals mainly with the belief revision framework developed by Alchourrón, Gärdenfors and Makinson (AGM) and uses this theory to investigate various abductive belief revision operators.&lt;/p&gt;&#xA;&lt;p&gt;My main research interests lie in Artificial Intelligence:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Knowledge Representation and Reasoning&lt;/li&gt;&#xA;&lt;li&gt;Belief Change&lt;/li&gt;&#xA;&lt;li&gt;Cognitive Robotics&lt;/li&gt;&#xA;&lt;li&gt;Reasoning About Actions&lt;/li&gt;&#xA;&lt;li&gt;Computational Machine Ethics&lt;/li&gt;&#xA;&lt;li&gt;Neurosymbolic Machine Learning&lt;/li&gt;&#xA;&lt;li&gt;Trustworthy Artificial Intelligence&lt;/li&gt;&#xA;&lt;li&gt;Reasoning and Truthfullness in Large Language Models&lt;/li&gt;&#xA;&lt;li&gt;Robotic Vision&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Currently I am the Deputy Dean (Education) of the Faculty of Engineering at UNSW.&lt;/p&gt;&#xA;&lt;p&gt;Previously I served as the Head of the School of Computer Science and Engineering (CSE) from July 2010 to September 2019.&lt;/p&gt;&#xA;&lt;p&gt;Other roles I currently hold include:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Fellow, Australian Academy of Technological Sciences &amp;amp; Engineering (ATSE)&lt;/li&gt;&#xA;&lt;li&gt;Deputy Director of Creative Robotics Lab (CRL) and Co-Director of the Intelligent Environments Lab&lt;/li&gt;&#xA;&lt;li&gt;Professorial Fellow at the iCinema Centre for Interactive Cinema Research&lt;/li&gt;&#xA;&lt;li&gt;Director &amp;amp; Chair Lifetime Awards, Pearcey Foundation&lt;/li&gt;&#xA;&lt;li&gt;Vice President, Computing Research and Education Association of Australasia (CORE)&lt;/li&gt;&#xA;&lt;li&gt;Executive, Australian Council of Engineering Deans (ACED)&lt;/li&gt;&#xA;&lt;li&gt;College of Experts, Australian Research Council (ARC)&lt;/li&gt;&#xA;&lt;li&gt;Member, Artificial Intelligence (AI) &amp;amp; Ethics Committee, Australian Computer Society (ACS)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Previous roles I have held include:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;President (mid-2016 &amp;ndash; mid-2018) and the Immediate Past President (mid-2018 &amp;ndash; mid-2020) of the Australian Council of Deans of ICT (ACDICT)&lt;/li&gt;&#xA;&lt;li&gt;Chair of NICTA (now Data61; Australia&amp;rsquo;s national ICT centre of excellence) University Partner Committee&lt;/li&gt;&#xA;&lt;li&gt;Chair, NSW Steering Committee for Digital Careers.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;</description>
+      <guid>http://localhost:1313/research/imb/</guid>
+      <description>&lt;p&gt;Class-imbalanced and long-tailed learning focus on scenarios where some classes have many samples while others have very few. Standard deep networks tend to overfit majority classes and under-represent rare but clinically important categories, leading to biased decision boundaries and poor minority-class performance. Our contributions span both medical and natural image domains. In medical imaging, we propose imbalance-aware methods such as a deep feature graph attention network for histopathology (ISBI 2022), which models patch–patch relationships to better capture minority patterns, and adaptive unified contrastive learning with graph-based feature aggregation (ESWA), which reweights contrastive objectives to reduce majority-class bias. In the natural image domain, we develop a decoupled optimisation framework (AAAI 2024) for long-tailed recognition that separates and optimises different parameter groups with tailored objectives, significantly improving performance across head, medium, and tail classes.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Future Direction&lt;/strong&gt; Promising directions include extending our imbalance-aware methods to multi-modal and federated settings, integrating them with large-scale vision/foundation models, and developing automatic, data-centric strategies (e.g., adaptive augmentation or reweighting) that can handle long-tailed distributions with minimal manual tuning.&lt;/p&gt;&#xA;</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/members/students/haonan/</link>
+      <title>Computational Machine Ethics</title>
+      <link>http://localhost:1313/research/cme/cme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/members/students/haonan/</guid>
-      <description></description>
+      <guid>http://localhost:1313/research/cme/cme/</guid>
+      <description>&lt;p&gt;#Required&lt;/p&gt;&#xA;&lt;p&gt;Computational Machine Ethics aims to embed ethical decision-making into machines (e.g., robots). This presents many challenges due to the abstract nature of ethics and the endless possibilities of ethical situations one may encounter. Being &amp;ldquo;ethical&amp;rdquo; in a situation can be dependant on context and different individuals and groups may define what is &amp;ldquo;right&amp;rdquo; and &amp;ldquo;wrong&amp;rdquo; differently depending on factors such as their culture and background. Additionally, ethical dilemmas where different rules may come into conflict are, in themselves, difficult problems with no one correct answer.&lt;/p&gt;&#xA;&lt;p&gt;In our research, we focus on the above within the field of AI planning. We leverage large language models and software engineering processes to help navigate some of these questions.&lt;/p&gt;&#xA;</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/members/students/jiaqi/</link>
+      <title>Computer Vision Applications</title>
+      <link>http://localhost:1313/research/cva/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/members/students/jiaqi/</guid>
-      <description></description>
+      <guid>http://localhost:1313/research/cva/</guid>
+      <description>&lt;p&gt;These papers represent research contributions across agricultural image analysis, medical and industrial computer vision, and interpretable deep learning. My work includes building large-scale datasets (e.g., GrainSpace, MANTA), developing image quality inspection systems for cereal grains, advancing anomaly detection and multimodal fusion methods, and contributing to interpretable AI research. These publications span top venues such as CVPR, IEEE TII, TGRS, RA-L, Scientific Data, and ECAI.&lt;/p&gt;&#xA;</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/members/students/qingchen/</link>
+      <title>Generative Models</title>
+      <link>http://localhost:1313/research/gm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/members/students/qingchen/</guid>
-      <description></description>
+      <guid>http://localhost:1313/research/gm/</guid>
+      <description>&lt;p&gt;These papers extend my research into generative models, vision-language models, and anomaly detection. The work includes human image generation with pose priors (AAAI 2025), counterfactual-aware procedural planning (ACM MM 2025), and visual-language models for anomaly detection (ACM MM 2025). Together, they reflect my broader contributions to advanced deep learning methods in computer vision and multimodal AI.&lt;/p&gt;&#xA;</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/members/students/ruoyu/</link>
+      <title>Histopathology Stain Normalisation</title>
+      <link>http://localhost:1313/research/stnorm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/members/students/ruoyu/</guid>
-      <description>&lt;p&gt;Hi, I’m Ruoyu, a PhD student supervised by Yang and Morri.&#xA;My current research interests include vision–language models, parameter-efficient fine-tuning, domain-generalised semantic segmentation, and self-supervised learning. I also have extensive experience in nuclei segmentation and image enhancement.&lt;/p&gt;&#xA;&lt;p&gt;In addition, I am interested in large language models and their reasoning capabilities.&lt;/p&gt;&#xA;&lt;p&gt;Previously, I completed a Master of Information Technology (coursework) at UNSW, during which I undertook both COMP9991 and COMP9992 research projects supervised by Yang. These projects focused on noise-robust weakly supervised nuclei segmentation.&lt;/p&gt;&#xA;&lt;p&gt;Some of my research topics are outlined below. If you are interested in any of them, I would be happy to discuss further. My publications and outputs can also be found on my &lt;strong&gt;&lt;a href=&#34;https://github.com/RuoyuGuo&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;GitHub&lt;/a&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;a href=&#34;https://scholar.google.com.au/citations?user=z6IrExMAAAAJ&amp;amp;hl=en&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;Google Scholar&lt;/a&gt;&lt;/strong&gt; pages.&lt;/p&gt;&#xA;</description>
+      <guid>http://localhost:1313/research/stnorm/</guid>
+      <description>&lt;p&gt;Stain normalization aims to reduce colour and intensity variations in H&amp;amp;E-stained histopathology images that arise from differences in staining protocols, reagents, and scanners. These variations can seriously degrade the robustness and generalisability of downstream algorithms for classification, segmentation, and detection, especially in multi-centre settings. To address this challenge, we have proposed several deep learning–based stain normalization methods. Our earlier work (ISBI 2021) showed that using hematoxylin components as input can effectively enhance texture feature generation, leading to higher-quality stain-normalised outputs. Building on this, we developed a semi-supervised adversarial framework for stain normalization in histopathology images (MICCAI 2021) and later introduced the Colour Adaptive Generative Network (CAGAN) (MedIA 2022).&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Future Direction&lt;/strong&gt; Promising directions include extending stain normalization to multi-stain and multiplex settings, integrating normalization modules into large pathology foundation models, and jointly optimising stain-invariant representations with downstream tasks in a fully self-supervised or federated manner.&lt;/p&gt;&#xA;</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/members/students/yiwen/</link>
+      <title>Machine Ethics</title>
+      <link>http://localhost:1313/research/maceth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/members/students/yiwen/</guid>
-      <description></description>
+      <guid>http://localhost:1313/research/maceth/</guid>
+      <description>&lt;p&gt;#Required&lt;/p&gt;&#xA;&lt;p&gt;The study of machine ethics concerns machines that behave appropriately. The complexity of autonomous agents makes it difficult to specify every possible condition in real-world deployment. Therefore, machine ethics research—especially in formal methods—attempts to mitigate any unethical behaviour or intervene if such agents are about to do something unethical.&lt;/p&gt;&#xA;&lt;p&gt;Ethics is used because it reflects how humans are expected to behave in society. In this case, we take a general approach and consider different kinds of ethics proposed by ethicists and philosophers. Without a doubt, there are many rules and guidelines implemented within local groups. In specific environments, these rules and guidelines can then become their own form of &amp;ldquo;ethics&amp;rdquo;, which every interacting agent (robot or human) is required to follow.&lt;/p&gt;&#xA;</description>
+    </item>
+    <item>
+      <title>Medical Image Analysis</title>
+      <link>http://localhost:1313/research/mia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/mia/</guid>
+      <description>&lt;p&gt;#Required&#xA;My research focuses on pathology whole-slide images (WSIs) for cancer prognosis and related medical image analysis. The goal is to extract reliable and interpretable biomarkers from gigapixel pathology images to better predict cancer progression and patient outcomes.&lt;/p&gt;&#xA;</description>
+    </item>
+    <item>
+      <title>Model Fairness</title>
+      <link>http://localhost:1313/research/medfair/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/medfair/</guid>
+      <description>&lt;p&gt;Ensuring group fairness in deep learning models is crucial in sensitive domains like medical diagnosis, yet studies show they often exhibit demographic performance gaps that undermine trust. Existing debiasing methods typically require sensitive-attribute labels, introduce costly architectural changes, or improve fairness at the expense of utility.&lt;/p&gt;&#xA;&lt;p&gt;We introduce RLU, a medical imaging-oriented bias mitigation framework, which mitigates bias without requiring sensitive‑attribute knowledge or intrusive model modifications.&lt;/p&gt;&#xA;</description>
+    </item>
+    <item>
+      <title>Model Fairness</title>
+      <link>http://localhost:1313/research/pcdef/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/pcdef/</guid>
+      <description>&lt;p&gt;Ensuring group fairness in deep learning models is crucial in sensitive domains like medical diagnosis, yet studies show they often exhibit demographic performance gaps that undermine trust. Existing debiasing methods typically require sensitive-attribute labels, introduce costly architectural changes, or improve fairness at the expense of utility.&lt;/p&gt;&#xA;&lt;p&gt;We introduce RLU, a medical imaging-oriented bias mitigation framework, which mitigates bias without requiring sensitive‑attribute knowledge or intrusive model modifications.&lt;/p&gt;&#xA;</description>
     </item>
   </channel>
 </rss>

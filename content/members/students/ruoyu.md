@@ -1,8 +1,8 @@
 ---
 # content
 name: "Ruoyu Guo"
-description: "Domain generalisation; PEFT; Image enhancement;"
-avatar: "avatar/ruoyu.jpg"
+description: "Do we really need GPUs for deep learning?"
+avatar: "avatar/ruoyu.png"
 group: "phd"
 enrol: 202205
 
