@@ -49,3 +49,17 @@
 .sa {
   background-color: rgb(133, 108, 141);
 }
+
+// .section-card {
+//   background: rgba(255, 255, 255, 0.7);
+//   border: 1px solid rgba(0, 0, 0, 0.06);
+//   border-radius: 16px;
+//   padding: 2.5rem 3rem;
+// }
+
+.section-card {
+  background: #fafafa;                 /* 非纯白 */
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  padding: 2.5rem 3rem;
+}
