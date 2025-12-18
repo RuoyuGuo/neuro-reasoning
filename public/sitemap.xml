@@ -4,49 +4,52 @@
     <loc>http://localhost:1313/members/faculty/yang/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/research/mri/</loc>
+    <loc>http://localhost:1313/research/biomedical_image/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/research/imb/</loc>
+    <loc>http://localhost:1313/projects/mri/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/research/cme/cme/</loc>
+    <loc>http://localhost:1313/projects/imb/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/research/cva/</loc>
+    <loc>http://localhost:1313/projects/cme/cme/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/research/gm/</loc>
+    <loc>http://localhost:1313/projects/cva/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/research/stnorm/</loc>
+    <loc>http://localhost:1313/projects/gm/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/research/maceth/</loc>
+    <loc>http://localhost:1313/projects/stnorm/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/research/mia/</loc>
+    <loc>http://localhost:1313/projects/maceth/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/research/medfair/</loc>
+    <loc>http://localhost:1313/projects/mia/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/research/pcdef/</loc>
+    <loc>http://localhost:1313/projects/medfair/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/research/nuseg/</loc>
+    <loc>http://localhost:1313/projects/pcdef/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/research/rip/</loc>
+    <loc>http://localhost:1313/projects/nuseg/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/research/tts/</loc>
+    <loc>http://localhost:1313/projects/rip/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/projects/tts/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/members/faculty/morri/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/research/enh/</loc>
+    <loc>http://localhost:1313/projects/enh/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/members/alumni/cong/</loc>
@@ -55,7 +58,13 @@
     <loc>http://localhost:1313/members/alumni/lei/</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/members/alumni/priyanka/</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/members/alumni/ray/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/members/alumni/renhao/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/members/alumni/xiekunzi/</loc>
@@ -64,10 +73,16 @@
     <loc>http://localhost:1313/members/students/haonan/</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/members/students/qingcheng/</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/members/students/ruoyu/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/members/students/shenyang_qian/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/members/students/sicong/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/members/students/this-is-tammy/</loc>
@@ -76,16 +91,16 @@
     <loc>http://localhost:1313/members/students/wenbin/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/members/students/yongze_wang/</loc>
+    <loc>http://localhost:1313/members/students/yafei/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>http://localhost:1313/members/students/yongze_wang/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/categories/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/research/da/</loc>
+    <loc>http://localhost:1313/projects/da/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/members/</loc>
@@ -98,6 +113,9 @@
   </url>
   <url>
     <loc>http://localhost:1313/members/faculty/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/projects/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/research/</loc>

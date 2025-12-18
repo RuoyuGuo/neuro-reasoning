@@ -75,332 +75,320 @@ For those interested in exploring further or considering future collaboration or
 </header><main class="container">
 
 <style>
-  .research-title {
-    background: rgba(0, 0, 0, 0.6); 
-    color: white;
-    padding: 0.5rem; 
-    width: 100%;
-    border-bottom-left-radius: 12px;  
-    border-bottom-right-radius: 12px;
-    font-variant: small-caps; 
-    font-size: 1rem; 
-    z-index: 1;  
-    transition: background 0.3s ease, transform 0.3s ease;
-    display: block;           
-    margin-top: auto;        
-  }
+ 
 
-  .research-title:hover {
-    background: rgba(0, 0, 0, 0.9);
-    transform: scale(1.03);
-  }
+.theme-block{
+  width: 100%;
+  margin: 3.2rem auto 0 auto;
+  padding: 1.3rem 1.3rem 1.5rem 1.3rem;
+  border-radius: 16px;
+  background: rgba(66, 153, 225, 0.05);
+  box-shadow: 0 10px 28px rgba(17, 24, 39, 0.06);
+}
 
+ 
+
+.theme-title-row{ margin-bottom: 1.4rem; }
+
+.theme-title-text{
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 3px solid rgba(66, 153, 225, 0.55);
+}
+
+.theme-title-main{
+  flex: 0 0 30%;
+  font-size: 1.45rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.theme-title-intro{
+  flex: 1 1 auto;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #555;
+}
+
+ 
+
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+
+.project-box{
+  border-radius: 14px;
+  padding: 1.1rem 1.1rem 1.2rem 1.1rem;
+  background: rgba(255,255,255,0.7);
+  box-shadow: 0 10px 22px rgba(17, 24, 39, 0.06);
+  border: 1px solid rgba(66, 153, 225, 0.18);
+}
+
+.project-title{
+  font-size: 1.08rem;
+  font-weight: 650;
+  padding-bottom: 0.7rem;
+  margin-bottom: 0.9rem;
+  border-bottom: 1px solid rgba(66, 153, 225, 0.18);
+}
+
+ 
+
+.subproject-item{
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 0.95rem;
+  padding: 0.8rem 0;
+}
+
+.subproject-item + .subproject-item{
+  border-top: 1px solid rgba(17, 24, 39, 0.08);
+}
+
+.subproject-fig{
+  width: 200px;
+  height: 140px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(17,24,39,0.04);
+  border: 1px solid rgba(17,24,39,0.08);
+}
+
+.subproject-title{
+  display: inline-block;
+  font-size: 0.98rem;
+  font-weight: 620;
+  color: #111;
+  text-decoration: none;
+}
+.subproject-title:hover{ text-decoration: underline; }
+
+.subproject-desc{
+  margin-top: 0.35rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #555;
+}
+
+ 
+
+@media (max-width: 980px){
+  .projects-grid{ grid-template-columns: 1fr; }
+  .theme-title-text{ flex-direction: column; gap: 0.4rem; }
+  .theme-title-main{ white-space: normal; }
+  .subproject-item{ grid-template-columns: 140px minmax(0, 1fr); }
+  .subproject-fig{ width: 140px; height: 100px; }
+}
+
+@media (max-width: 560px){
+  .subproject-item{ grid-template-columns: 1fr; }
+  .subproject-fig{ width: 100%; height: 180px; }
+}
 </style>
 
-<div style="max-width: 1200px; margin: 0 auto; padding: 2rem; width: 100%;">
 
-  <h2 style="text-align: center; margin-bottom: 2rem;">Our Research Areas</h2>
+<div style="max-width: 1200px; margin: 0 auto; padding: 2rem;">
 
-<div style="text-align: left; max-width: 1000px; margin: 0 auto;">
-  <p>Our research explores a wide range of topics in computer vision and medical AI, with an emphasis on building reliable and impactful learning systems. Here, you will find an overview of our projects, academic outputs, and technical explorations, including slides and publications.</p>
+  
+  <h2 style="text-align: center; margin-bottom: 2rem;">
+    Our Research Areas
+  </h2>
+
+  
+  <div style="max-width: 1000px; margin: 0 auto;">
+    <p>Our research explores a wide range of topics in computer vision and medical AI, with an emphasis on building reliable and impactful learning systems. Here, you will find an overview of our projects, academic outputs, and technical explorations, including slides and publications.</p>
 <p>For those interested in exploring further or considering future collaboration or application, we also encourage you to visit the pages of <strong><a href="https://cgi.cse.unsw.edu.au/~ysong/"target="_blank" rel="external nofollow noopener noreferrer">A/Prof. Yang Song</a></strong> and <strong><a href="https://cgi.cse.unsw.edu.au/~morri/index_files/researchprojects.html"target="_blank" rel="external nofollow noopener noreferrer">Professor Maurice Pagnucco</a></strong>, where you can find additional insights, related works, and broader group activities beyond what is presented here.</p>
 
-</div>
-
-    <div style="display: grid; width: 100%; max-width: 1000px;
-      margin: 2rem auto 0 auto;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-auto-rows: minmax(200px, auto);
-      gap: 1.5rem;">
-    
-      <div class="da" style="
-        height: 200px;
-        border-radius: 12px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        display: flex;               
-        flex-direction: column;      
-        align-items: center;         
-        justify-content: flex-start; 
-      ">
-      <img src="/topics/default.png" alt="Domain adaptation"
-          style="width: 100%; height: 8.5rem; object-fit: contain; margin-top: 0.8rem; background: transparent;" />
-
-        <a href="/research/da/" class="research-title">
-          Domain adaptation
-        </a>
-      </div>
-    
-      <div class="mri" style="
-        height: 200px;
-        border-radius: 12px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        display: flex;               
-        flex-direction: column;      
-        align-items: center;         
-        justify-content: flex-start; 
-      ">
-      <img src="/topics/mri.png" alt="Brain MRI analysis"
-          style="width: 100%; height: 8.5rem; object-fit: contain; margin-top: 0.8rem; background: transparent;" />
-
-        <a href="/research/mri/" class="research-title">
-          Brain MRI analysis
-        </a>
-      </div>
-    
-      <div class="imbalance" style="
-        height: 200px;
-        border-radius: 12px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        display: flex;               
-        flex-direction: column;      
-        align-items: center;         
-        justify-content: flex-start; 
-      ">
-      <img src="/topics/imbalance.png" alt="Class Imbalanced Learning"
-          style="width: 100%; height: 8.5rem; object-fit: contain; margin-top: 0.8rem; background: transparent;" />
-
-        <a href="/research/imb/" class="research-title">
-          Class Imbalanced Learning
-        </a>
-      </div>
-    
-      <div class="cme" style="
-        height: 200px;
-        border-radius: 12px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        display: flex;               
-        flex-direction: column;      
-        align-items: center;         
-        justify-content: flex-start; 
-      ">
-      <img src="/topics/cover%20image%20of%20computational%20machine%20ethics.png" alt="Computational Machine Ethics"
-          style="width: 100%; height: 8.5rem; object-fit: contain; margin-top: 0.8rem; background: transparent;" />
-
-        <a href="/research/cme/cme/" class="research-title">
-          Computational Machine Ethics
-        </a>
-      </div>
-    
-      <div class="CVA" style="
-        height: 200px;
-        border-radius: 12px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        display: flex;               
-        flex-direction: column;      
-        align-items: center;         
-        justify-content: flex-start; 
-      ">
-      <img src="/topics/default.png" alt="Computer Vision Applications"
-          style="width: 100%; height: 8.5rem; object-fit: contain; margin-top: 0.8rem; background: transparent;" />
-
-        <a href="/research/cva/" class="research-title">
-          Computer Vision Applications
-        </a>
-      </div>
-    
-      <div class="GM" style="
-        height: 200px;
-        border-radius: 12px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        display: flex;               
-        flex-direction: column;      
-        align-items: center;         
-        justify-content: flex-start; 
-      ">
-      <img src="/topics/default.png" alt="Generative Models"
-          style="width: 100%; height: 8.5rem; object-fit: contain; margin-top: 0.8rem; background: transparent;" />
-
-        <a href="/research/gm/" class="research-title">
-          Generative Models
-        </a>
-      </div>
-    
-      <div class="sn" style="
-        height: 200px;
-        border-radius: 12px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        display: flex;               
-        flex-direction: column;      
-        align-items: center;         
-        justify-content: flex-start; 
-      ">
-      <img src="/topics/stainnorm.png" alt="Histopathology Stain Normalisation"
-          style="width: 100%; height: 8.5rem; object-fit: contain; margin-top: 0.8rem; background: transparent;" />
-
-        <a href="/research/stnorm/" class="research-title">
-          Histopathology Stain Normalisation
-        </a>
-      </div>
-    
-      <div class="maceth" style="
-        height: 200px;
-        border-radius: 12px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        display: flex;               
-        flex-direction: column;      
-        align-items: center;         
-        justify-content: flex-start; 
-      ">
-      <img src="/topics/default.png" alt="Machine Ethics"
-          style="width: 100%; height: 8.5rem; object-fit: contain; margin-top: 0.8rem; background: transparent;" />
-
-        <a href="/research/maceth/" class="research-title">
-          Machine Ethics
-        </a>
-      </div>
-    
-      <div class="MIA" style="
-        height: 200px;
-        border-radius: 12px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        display: flex;               
-        flex-direction: column;      
-        align-items: center;         
-        justify-content: flex-start; 
-      ">
-      <img src="/topics/default.png" alt="Medical Image Analysis"
-          style="width: 100%; height: 8.5rem; object-fit: contain; margin-top: 0.8rem; background: transparent;" />
-
-        <a href="/research/mia/" class="research-title">
-          Medical Image Analysis
-        </a>
-      </div>
-    
-      <div class="trustworthy" style="
-        height: 200px;
-        border-radius: 12px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        display: flex;               
-        flex-direction: column;      
-        align-items: center;         
-        justify-content: flex-start; 
-      ">
-      <img src="/topics/coverpage_fair_medical_diagnosis.png" alt="Model Fairness"
-          style="width: 100%; height: 8.5rem; object-fit: contain; margin-top: 0.8rem; background: transparent;" />
-
-        <a href="/research/medfair/" class="research-title">
-          Model Fairness
-        </a>
-      </div>
-    
-      <div class="trustworthy" style="
-        height: 200px;
-        border-radius: 12px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        display: flex;               
-        flex-direction: column;      
-        align-items: center;         
-        justify-content: flex-start; 
-      ">
-      <img src="/topics/coverpage_pointcloud_defense.jpg" alt="Model Fairness"
-          style="width: 100%; height: 8.5rem; object-fit: contain; margin-top: 0.8rem; background: transparent;" />
-
-        <a href="/research/pcdef/" class="research-title">
-          Model Fairness
-        </a>
-      </div>
-    
-      <div class="nuseg" style="
-        height: 200px;
-        border-radius: 12px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        display: flex;               
-        flex-direction: column;      
-        align-items: center;         
-        justify-content: flex-start; 
-      ">
-      <img src="/topics/nuseg.png" alt="Nuclei Segmentation"
-          style="width: 100%; height: 8.5rem; object-fit: contain; margin-top: 0.8rem; background: transparent;" />
-
-        <a href="/research/nuseg/" class="research-title">
-          Nuclei Segmentation
-        </a>
-      </div>
-    
-      <div class="rcda" style="
-        height: 200px;
-        border-radius: 12px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        display: flex;               
-        flex-direction: column;      
-        align-items: center;         
-        justify-content: flex-start; 
-      ">
-      <img src="/topics/cover%20image%20of%20rip%20current%20data%20augmentation.png" alt="Rip Current Data augmentation"
-          style="width: 100%; height: 8.5rem; object-fit: contain; margin-top: 0.8rem; background: transparent;" />
-
-        <a href="/research/rip/" class="research-title">
-          Rip Current Data augmentation
-        </a>
-      </div>
-    
-      <div class="tts" style="
-        height: 200px;
-        border-radius: 12px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        display: flex;               
-        flex-direction: column;      
-        align-items: center;         
-        justify-content: flex-start; 
-      ">
-      <img src="/topics/tts.jpg" alt="Speaker-Adaptive TTS"
-          style="width: 100%; height: 8.5rem; object-fit: contain; margin-top: 0.8rem; background: transparent;" />
-
-        <a href="/research/tts/" class="research-title">
-          Speaker-Adaptive TTS
-        </a>
-      </div>
-    
-      <div class="enh" style="
-        height: 200px;
-        border-radius: 12px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        display: flex;               
-        flex-direction: column;      
-        align-items: center;         
-        justify-content: flex-start; 
-      ">
-      <img src="/topics/enh.png" alt="Image Enhancement"
-          style="width: 100%; height: 8.5rem; object-fit: contain; margin-top: 0.8rem; background: transparent;" />
-
-        <a href="/research/enh/" class="research-title">
-          Image Enhancement
-        </a>
-      </div>
-    
   </div>
 
+  
+  
+
+    <div class="theme-block">
+
+      <div class="theme-title-row">
+        <div class="theme-title-text">
+          <div class="theme-title-main">
+            Biomedical Imaging
+          </div>
+          
+            <div class="theme-title-intro">this is introduction...</div>
+          
+        </div>
+      </div>
+
+      
+        <div class="projects-grid">
+
+          
+            
+            <div class="project-box">
+
+              <div class="project-title">Cancer analysis</div>
+
+              
+                
+                  
+
+                  <div class="subproject-item">
+
+                    
+                      
+                      
+                        
+                      
+                      <div class="subproject-fig"
+                           style="background-image:url('/topics/mri.png');">
+                      </div>
+                    
+
+                    <div>
+                      
+                        <a class="subproject-title"
+                           href="https://arxiv.org/abs/xxxx.xxxxx"
+                           target="_blank" rel="noopener">
+                          Paper 1 Title
+                        </a>
+                      
+
+                      
+                        <div class="subproject-desc">abstract</div>
+                      
+                    </div>
+
+                  </div>
+                
+                  
+
+                  <div class="subproject-item">
+
+                    
+                      
+                      
+                        
+                      
+                      <div class="subproject-fig"
+                           style="background-image:url('/topics/mri.png');">
+                      </div>
+                    
+
+                    <div>
+                      
+                        <a class="subproject-title"
+                           href="https://doi.org/xx.xxxx/xxxxx"
+                           target="_blank" rel="noopener">
+                          Paper 2 Title
+                        </a>
+                      
+
+                      
+                        <div class="subproject-desc">abstract</div>
+                      
+                    </div>
+
+                  </div>
+                
+              
+
+            </div>
+          
+            
+            <div class="project-box">
+
+              <div class="project-title">Brain MRI</div>
+
+              
+                
+                  
+
+                  <div class="subproject-item">
+
+                    
+                      
+                      
+                        
+                      
+                      <div class="subproject-fig"
+                           style="background-image:url('/topics/mri.png');">
+                      </div>
+                    
+
+                    <div>
+                      
+                        <a class="subproject-title"
+                           href="https://..."
+                           target="_blank" rel="noopener">
+                          Paper A Title
+                        </a>
+                      
+
+                      
+                        <div class="subproject-desc">abstract</div>
+                      
+                    </div>
+
+                  </div>
+                
+              
+
+            </div>
+          
+            
+            <div class="project-box">
+
+              <div class="project-title">Anatomical and Lesion Segmentation</div>
+
+              
+                
+                  
+
+                  <div class="subproject-item">
+
+                    
+                      
+                      
+                        
+                      
+                      <div class="subproject-fig"
+                           style="background-image:url('/topics/mri.png');">
+                      </div>
+                    
+
+                    <div>
+                      
+                        <a class="subproject-title"
+                           href="https://..."
+                           target="_blank" rel="noopener">
+                          Paper X Title
+                        </a>
+                      
+
+                      
+                        <div class="subproject-desc">abstract</div>
+                      
+                    </div>
+
+                  </div>
+                
+              
+
+            </div>
+          
+
+        </div>
+      
+
+    </div>
+
+  
+
 </div>
+
 </main><footer class="footer">
     <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.148.2"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.4.0-alpha-20250721024521-a1cd700b"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
         </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>

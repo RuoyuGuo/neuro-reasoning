@@ -17,6 +17,13 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/members/students/qingcheng/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/members/students/qingcheng/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;I am Qingchen Tang, currently an MPhil student at the University of New South Wales (UNSW), supervised by Yang, with co-supervision from Flora and Sanjay.&lt;/p&gt;&#xA;&lt;p&gt;My research interests focus on vision–language models, generative model safety, and machine unlearning. I also have solid research experience in image segmentation, with particular attention to weakly supervised and annotation-efficient medical image segmentation.&lt;/p&gt;&#xA;&lt;p&gt;Prior to my MPhil studies, I completed a Master of Information Technology (Coursework) at UNSW. During this time, I undertook two research courses, COMP9991 and COMP9993, under the supervision of  Yang, where my work primarily investigated weakly supervised medical image segmentation methods.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/members/students/ruoyu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/members/students/ruoyu/</guid>
@@ -31,6 +38,13 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/members/students/sicong/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/members/students/sicong/</guid>
+      <description>&lt;p&gt;Hi, I&amp;rsquo;m Sicong. I am an MPhil student supervised by supervised by Yang and Morri at the UNSW.&#xA;I completed my Bachelor’s degree in Computer Science at the UNSW, with a focus on artificial intelligence. During my MPhil studies, I was awarded the UNSW PhD UIPA Scholarship.&#xA;My current research interests include vision–language models, parameter-efficient fine-tuning, robot navigation, and medical image segmentation. If you share similar interests, I would be very happy to discuss potential collaborations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/members/students/this-is-tammy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/members/students/this-is-tammy/</guid>
@@ -42,6 +56,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/members/students/wenbin/</guid>
       <description>&lt;p&gt;Hi, I’m Wenbin, a PhD Candidate at UNSW, supervised by &lt;strong&gt;Prof. Sanjay Jha&lt;/strong&gt; and &lt;strong&gt;A/Prof. Yang Song&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;My research primarily focuses on &lt;strong&gt;Generative AI&lt;/strong&gt; and &lt;strong&gt;Text-to-Speech (TTS)&lt;/strong&gt; technologies, with a specific interest in &lt;strong&gt;Voice Cloning&lt;/strong&gt;, &lt;strong&gt;Talking-head Generation&lt;/strong&gt;, and &lt;strong&gt;Zero-Shot Speaker-Adaptive TTS&lt;/strong&gt;. I am also actively researching &lt;strong&gt;Voice Data Attribution&lt;/strong&gt; and &lt;strong&gt;Anti-Spoofing&lt;/strong&gt; within the context of trustworthy digital societies.&lt;/p&gt;&#xA;&lt;p&gt;Beyond academia, I am the &lt;strong&gt;Co-founder and Technical Lead of Sozio.AI Pty Ltd&lt;/strong&gt;, a UNSW-incubated startup where we are developing a &amp;ldquo;Virtual Tutor System&amp;rdquo; to bring real-time, interactive AI avatars to education. My work bridges the gap between cutting-edge research and commercial application, translating theoretical advancements into scalable products.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/members/students/yafei/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/members/students/yafei/</guid>
+      <description>&lt;p&gt;Hi, I’m Yafei, a Master of Philosophy candidate at the University of New South Wales (UNSW), supervised by Dr. Yang Song and Prof. Erik Meijering.&lt;/p&gt;&#xA;&lt;p&gt;My research primarily focuses on Remote Sensing Change Detection (CD). I am particularly interested in addressing the data scarcity challenge in remote sensing by leveraging Image-to-Image (I2I) translation and Generative Models (GANs/Diffusion) to produce high-quality synthetic data. By bridging the synthetic-real domain gap, my work aims to enhance the robustness of change detection frameworks under supervised and semi-supervised settings.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

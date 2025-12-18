@@ -1,0 +1,193 @@
+{{ define "content" }}
+<div style="max-width: 1000px; margin: 0 auto; padding: 2rem 1rem; width:100%">
+
+
+  <h1 style="text-align: left; display: block;">{{ .Title }}</h1>
+
+  <!-- people who are working on this -->
+   <p>Meet the people working on it!</p>
+  <div style="display:flex; gap:2rem; flex-wrap:wrap; margin-top:1rem;">
+    
+
+    {{ $topic := .Params.class }} 
+
+    {{ range $p := where site.RegularPages "Section" "members" }}
+      {{ with (where $p.Params.research_topic "class" $topic) }}
+        <a href="{{ $p.RelPermalink }}" style="text-align:center;">
+          {{ with $p.Params.avatar }}
+            <img src="{{ . | relURL }}" alt="{{ or $p.Params.name $p.Title }}"
+                style="width:80px; height:80px; border-radius:50%; object-fit:cover;">
+          {{ end }}
+          <div style="margin-top:0.5rem;">{{ or $p.Params.name $p.Title }}</div>
+        </a>
+      {{ end }}
+    {{ end }}
+  </div>
+
+
+{{ if .Content }}
+  <section style="margin-top:2rem;">
+    <h2>Research Overview</h2>
+    <div style="margin-top:1rem; line-height:1.6; font-size:1.05rem;">
+      {{ .Content }}
+    </div>
+  </section>
+{{ end }}
+
+
+{{/* === Slides Viewer: auto-detect Slide1.jpg/Slide2.png, numeric sort, prev/next only === */}}
+{{- $items := slice -}}
+{{ with .Resources }}
+  {{- $all := .ByType "image" -}}
+  {{- $re := `(?i)^slide([0-9]+)\.(jpe?g|png|webp)$` -}}
+  {{- range $all -}}
+    {{- if (findRE $re .Name) -}}
+      {{- $num := (index (findRE `[0-9]+` .Name) 0) | int -}}
+      {{- $items = $items | append (dict "num" $num "res" .) -}}
+    {{- end -}}
+  {{- end -}}
+{{ end }}
+
+{{ if gt (len $items) 0 }}
+  {{- $sorted := sort $items "num" -}}
+
+  <h2>Project Slides</h2>
+  <div id="sv" style="max-width: 1100px; margin: 1.25rem auto;">
+    <div style="position:relative; background:#111; border-radius:12px; overflow:hidden; aspect-ratio:16/9; display:flex; align-items:center; justify-content:center;">
+      <img id="sv-img" src="{{ (index $sorted 0).res.RelPermalink }}" alt="slide"
+           style="max-width:100%; max-height:100%; object-fit:contain; display:block;">
+      <button id="sv-prev" aria-label="Previous"
+        style="position:absolute; left:10px; top:50%; transform:translateY(-50%); padding:.6rem .8rem; border:none; border-radius:10px; background:#ffffffcc; cursor:pointer;">←</button>
+      <button id="sv-next" aria-label="Next"
+        style="position:absolute; right:10px; top:50%; transform:translateY(-50%); padding:.6rem .8rem; border:none; border-radius:10px; background:#ffffffcc; cursor:pointer;">→</button>
+      <div id="sv-count"
+        style="position:absolute; right:12px; bottom:10px; background:#0008; color:#fff; padding:.25rem .6rem; border-radius:8px; font-size:.9rem;">
+        1 / {{ len $sorted }}
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+  (function(){
+    const IMGS = [
+      {{- range $sorted -}}
+        "{{ .res.RelPermalink }}",
+      {{- end -}}
+    ];
+    let idx = 0;
+
+    try {
+      const usp = new URLSearchParams(window.location.search);
+      const start = parseInt(usp.get("p"), 10);
+      if (!isNaN(start) && start >= 1 && start <= IMGS.length) idx = start - 1;
+    } catch(_) {}
+
+    const img   = document.getElementById("sv-img");
+    const prev  = document.getElementById("sv-prev");
+    const next  = document.getElementById("sv-next");
+    const count = document.getElementById("sv-count");
+
+    function update(pushURL = true){
+      img.src = IMGS[idx];
+      count.textContent = (idx+1) + " / " + IMGS.length;
+
+      const a = new Image(); a.src = IMGS[(idx+1) % IMGS.length];
+      const b = new Image(); b.src = IMGS[(idx-1+IMGS.length) % IMGS.length];
+
+      if (pushURL) {
+        const url = new URL(window.location);
+        url.searchParams.set("p", String(idx + 1));
+        window.history.replaceState({}, "", url);
+      }
+    }
+    function goNext(){ idx = (idx+1) % IMGS.length; update(); }
+    function goPrev(){ idx = (idx-1+IMGS.length) % IMGS.length; update(); }
+
+    prev.addEventListener("click", goPrev);
+    next.addEventListener("click", goNext);
+
+    window.addEventListener("keydown", (e)=>{
+      const tag = (e.target.tagName||"").toLowerCase();
+      if (tag === "input" || tag === "textarea") return;
+      if (e.key === "ArrowLeft" || e.key === "PageUp")   { e.preventDefault(); goPrev(); }
+      if (e.key === "ArrowRight"|| e.key === "PageDown") { e.preventDefault(); goNext(); }
+    }, {passive:false});
+
+    let startX = null;
+    img.addEventListener("touchstart", (e)=>{ startX = e.touches[0].clientX; }, {passive:true});
+    img.addEventListener("touchend", (e)=>{
+      if (startX == null) return;
+      const dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 30) { dx < 0 ? goNext() : goPrev(); }
+      startX = null;
+    }, {passive:true});
+
+    window.addEventListener("popstate", ()=>{
+      try {
+        const usp = new URLSearchParams(window.location.search);
+        const p = parseInt(usp.get("p"), 10);
+        if (!isNaN(p) && p >= 1 && p <= IMGS.length) {
+          idx = p - 1;
+          update(false);
+        }
+      } catch(_) {}
+    });
+
+    update(false); 
+  })();
+  </script>
+{{ end }}
+
+{{ with .Params.papers }}
+  <section style="margin-top:2.5rem;">
+    <h2>Related Papers</h2>
+
+    <style>
+      .paper-list{ display:flex; flex-direction:column; gap:0.9rem; margin-top:1rem; }
+      .paper-card{
+        display:grid; grid-template-columns:auto 1fr; gap:1rem;
+        padding:0.9rem 1rem; border:1px solid #e5e7eb; border-radius:12px;
+        background:#f8f9fb;
+      }
+      .paper-idx{ font-family: ui-monospace,Menlo,Consolas,monospace; color:#6b7280; min-width:3.5rem; text-align:center; align-self:flex-start; }
+      .paper-title{ font-weight:700; line-height:1.4; margin:0; color:#111827; text-decoration:none; }
+      .paper-title:hover{ text-decoration:underline; }
+      .paper-authors{ color:#4b5563; margin-top:0.25rem; }
+      .paper-venue{ color:#6b7280; font-style:italic; margin-top:0.15rem; }
+    </style>
+
+    <div class="paper-list">
+        {{ range $i, $p := sort . "year" "desc" }}
+        <article class="paper-card">
+          <div class="paper-idx">[ {{ add $i 1 }} ]</div>
+          <div>
+            <!-- Title -->
+            {{ if $p.url }}
+              <a class="paper-title" href="{{ $p.url | safeURL }}" target="_blank" rel="noopener">
+                {{ $p.title }}
+              </a>
+            {{ else }}
+              <span class="paper-title">{{ $p.title }}</span>
+            {{ end }}
+
+            <!-- Authors -->
+            {{ with $p.authors }}
+              <div class="paper-authors">{{ . }}</div>
+            {{ end }}
+
+            <!-- Venue + Year -->
+            {{ if or $p.venue $p.year }}
+              <div class="paper-venue">
+                {{ with $p.venue }}{{ . }}{{ end }}
+                {{ with $p.year }} ({{ . }}){{ end }}
+              </div>
+            {{ end }}
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
+
+{{ end }}

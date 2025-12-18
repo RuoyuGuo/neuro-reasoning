@@ -24,10 +24,24 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/members/alumni/priyanka/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/members/alumni/priyanka/</guid>
+      <description>&lt;p&gt;Dr Priyanka Rana is a researcher in the Centre for Health Informatics (CHI), Australian Institute of Health Innovation (AIHI). She received her PhD in Computer Science from UNSW Sydney in March 2023.&lt;/p&gt;&#xA;&lt;p&gt;She specializes in AI-based deep learning for biomedical image analysis at both the cellular or whole slide levels.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://researchers.mq.edu.au/en/persons/priyanka-rana/&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;https://researchers.mq.edu.au/en/persons/priyanka-rana/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/members/alumni/ray/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/members/alumni/ray/</guid>
       <description>&lt;p&gt;#Required&#xA;Write an introduction about yourself here.&lt;br&gt;&#xA;&lt;strong&gt;Markdown&lt;/strong&gt; formatting is supported&lt;/p&gt;&#xA;&lt;p&gt;Hi, my name is Ray. I completed my PhD under the supervision of Morri and Yang in 2024.&#xA;My main research topic during my studies was machine ethics, particularly top-down machine ethics using epistemic logic. I explored various interpretations of ethics proposed by different ethicists and philosophers, and implemented them using formal methods across a range of scenarios.&lt;/p&gt;&#xA;&lt;p&gt;At the moment, I am focusing on developing verifiable architectures for autonomous robots. This involves capturing the necessary requirements and translating them into machine-understandable languages, applying various verification techniques such as model checking, satisfiability checking, and runtime monitoring, and developing design patterns to support reusability and integration.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/members/alumni/renhao/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/members/alumni/renhao/</guid>
+      <description>&lt;p&gt;#Required&lt;/p&gt;&#xA;&lt;p&gt;I have received his PhD degree in Computer Science from the University of New South Wales in February 2025. My PhD study primarily focuses on vision-based human trajectory prediction and computer vision.&lt;/p&gt;&#xA;&lt;p&gt;I am now an ARC Laureate Postdoctoral Research Fellow at iCinema Centre for Interactive Cinema Research, as well as its Associate Director Research (AI). My current interdisciplinary research encompasses the fields of wildfire spread prediction, wildfire simulation and deep learning.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

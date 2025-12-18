@@ -1,0 +1,62 @@
+{{ define "content" }}
+
+<style>
+  .research-title {
+    background: rgba(0, 0, 0, 0.6); 
+    color: white;
+    padding: 0.5rem; 
+    width: 100%;
+    border-bottom-left-radius: 12px;  
+    border-bottom-right-radius: 12px;
+    font-variant: small-caps; 
+    font-size: 1rem; 
+    z-index: 1;  
+    transition: background 0.3s ease, transform 0.3s ease;
+    display: block;           
+    margin-top: auto;        
+  }
+
+  .research-title:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.03);
+  }
+
+</style>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 2rem; width: 100%;">
+
+  <h2 style="text-align: center; margin-bottom: 2rem;">{{ .Title }}</h2>
+
+<div style="text-align: left; max-width: 1000px; margin: 0 auto;">
+  {{ .Content }}
+</div>
+
+    <div style="display: grid; width: 100%; max-width: 1000px;
+      margin: 2rem auto 0 auto;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-auto-rows: minmax(200px, auto);
+      gap: 1.5rem;">
+    {{ range sort (where .Site.RegularPages "Section" "projects") "Params.weight" }}
+      <div class="{{ .Params.class }}" style="
+        height: 200px;
+        border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        display: flex;               
+        flex-direction: column;      
+        align-items: center;         
+        justify-content: flex-start; 
+      ">
+      <img src="/{{ .Params.icon }}" alt="{{ .Title }}"
+          style="width: 100%; height: 8.5rem; object-fit: contain; margin-top: 0.8rem; background: transparent;" />
+
+        <a href="{{ .RelPermalink }}" class="research-title">
+          {{ .Title }}
+        </a>
+      </div>
+    {{ end }}
+  </div>
+
+</div>
+{{ end }}
