@@ -75,317 +75,204 @@ For those interested in exploring further or considering future collaboration or
 </header><main class="container">
 
 <style>
- 
+  .research-title {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0.5rem;
+    width: 100%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-variant: small-caps;
+    font-size: 1rem;
+    z-index: 2;
+    transition: background 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin-top: auto;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
 
-.theme-block{
-  width: 100%;
-  margin: 3.2rem 0 0 auto;
-  padding: 1.3rem 0.6rem 1.5rem 0.6rem;
-  border-radius: 16px;
-  background: rgba(66, 153, 225, 0.05);
-  box-shadow: 0 10px 28px rgba(17, 24, 39, 0.06);
-}
+     
 
- 
+  .research-title:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.03);
+  }
 
-.theme-title-row{ margin-bottom: 1.4rem; }
+    .theme-block{
+        width: 100%;
+        max-width: 1200px;
+        margin: 3.2rem auto 0 auto;
+        padding: 1.3rem 1.3rem 1.5rem 1.3rem;
+        border-radius: 16px;
+         
+        background: rgba(66, 153, 225, 0.05);
+        box-shadow: 0 10px 28px rgba(17, 24, 39, 0.06);
+        position: relative;
+    }
 
-.theme-title-text{
-  display: flex;
-  gap: 1rem;
-  padding-bottom: 0.9rem;
-  border-bottom: 3px solid rgba(66, 153, 225, 0.55);
-}
 
-.theme-title-main{
-  flex: 0 0 30%;
-  font-size: 1.45rem;
-  font-weight: 600;
-  white-space: nowrap;
-}
+   
 
-.theme-title-intro{
-  flex: 1 1 auto;
-  font-size: 0.95rem;
-  line-height: 1.55;
-  color: #555;
-}
+  .theme-title-row {
+    width: 100%;
+    margin-bottom: 1.2rem;
+     
+  }
 
- 
+  .theme-title-text{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 0 0.9rem 0;
+     
+    border-bottom: 3px solid rgba(66, 153, 225, 0.55);
+    position: relative;
+  }
 
-.projects-grid{
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.4rem;
-}
+  .theme-title-main{
+    flex: 0 0 30%;
+    font-size: 1.45rem;
+    font-weight: 600;
+    line-height: 1.2;
+    white-space: nowrap;
+    padding-right: 1rem;
+  }
 
-.project-box{
-  border-radius: 14px;
-  padding: 1.1rem 1.1rem 1.2rem 1.1rem;
-  background: rgba(255,255,255,0.7);
-  box-shadow: 0 10px 22px rgba(17, 24, 39, 0.06);
-  border: 1px solid rgba(66, 153, 225, 0.18);
-}
+  .theme-title-intro {
+    flex: 1 1 auto;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #555;
+  }
 
-.project-title{
-  font-size: 1.08rem;
-  font-weight: 650;
-  padding-bottom: 0.7rem;
-  margin-bottom: 0.9rem;
-  border-bottom: 1px solid rgba(66, 153, 225, 0.18);
-}
+   
 
- 
+  .projects-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 1.5rem;
+  }
 
-.subproject-item{
-  display: grid;
-  grid-template-columns: 300px minmax(0, 1fr);
-  gap: 0.95rem;
-  padding: 0.8rem 0;
-}
+    .project-card{
+    height: 200px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    }
 
-.subproject-item + .subproject-item{
-  border-top: 1px solid rgba(17, 24, 39, 0.08);
-}
+    .project-cover{
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        }
 
-.subproject-fig{
-  width: 300px;
-  height: 200px;
-  border-radius: 12px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(17,24,39,0.04);
-  border: 1px solid rgba(17,24,39,0.08);
-}
+  .project-img {
+    width: 100%;
+    height: 8.5rem;
+    object-fit: contain;
+    margin-top: 0.8rem;
+    background: transparent;
+  }
 
-.subproject-title{
-  display: inline-block;
-  font-size: 0.98rem;
-  font-weight: 620;
-  color: #111;
-  text-decoration: none;
-}
-.subproject-title:hover{ text-decoration: underline; }
+  @media (max-width: 980px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .theme-title-main {
+      flex: none;
+      width: 100%;
+      white-space: normal;
+    }
+    .theme-title-text {
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+  }
 
-.subproject-desc{
-  margin-top: 0.35rem;
-  font-size: 0.92rem;
-  line-height: 1.55;
-  color: #555;
-}
-
- 
-
-@media (max-width: 980px){
-  .projects-grid{ grid-template-columns: 1fr; }
-  .theme-title-text{ flex-direction: column; gap: 0.4rem; }
-  .theme-title-main{ white-space: normal; }
-  .subproject-item{ grid-template-columns: 140px minmax(0, 1fr); }
-  .subproject-fig{ width: 140px; height: 100px; }
-}
-
-@media (max-width: 560px){
-  .subproject-item{ grid-template-columns: 1fr; }
-  .subproject-fig{ width: 100%; height: 180px; }
-}
+  @media (max-width: 560px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
 
+<div style="max-width: 1200px; margin: 0 auto; padding: 2rem; width: 100%;">
 
-<div style="max-width: 1200px; margin: 0 auto; padding: 2rem;">
+  <h2 style="text-align: center; margin-bottom: 2rem;">Our Research Areas</h2>
 
-  
-  <h2 style="text-align: center; margin-bottom: 2rem;">
-    Our Research Areas
-  </h2>
-
-  
-  <div style="width:1000px; padding: 0 100px 0 100px;; margin: 0 auto;">
+  <div style="text-align: left; max-width: 1000px; margin: 0 auto;">
     <p>Our research explores a wide range of topics in computer vision and medical AI, with an emphasis on building reliable and impactful learning systems. Here, you will find an overview of our projects, academic outputs, and technical explorations, including slides and publications.</p>
 <p>For those interested in exploring further or considering future collaboration or application, we also encourage you to visit the pages of <strong><a href="https://cgi.cse.unsw.edu.au/~ysong/"target="_blank" rel="external nofollow noopener noreferrer">A/Prof. Yang Song</a></strong> and <strong><a href="https://cgi.cse.unsw.edu.au/~morri/index_files/researchprojects.html"target="_blank" rel="external nofollow noopener noreferrer">Professor Maurice Pagnucco</a></strong>, where you can find additional insights, related works, and broader group activities beyond what is presented here.</p>
 
   </div>
 
-  
-  
 
-    <div class="theme-block">
+  
+    
+      <div class="theme-block">
 
-      <div class="theme-title-row">
-        <div class="theme-title-text">
-          <div class="theme-title-main">
-            Biomedical Imaging
+        <div class="theme-title-row">
+          <div class="theme-title-text">
+            <span class="theme-title-main">
+              Biomedical Imaging
+            </span>
+            
+              <span class="theme-title-intro">
+                this is introduction...
+              </span>
+            
           </div>
-          
-            <div class="theme-title-intro">this is introduction...</div>
-          
         </div>
-      </div>
 
+      
       
         <div class="projects-grid">
-
           
-            
-            <div class="project-box">
-
-              <div class="project-title">Cancer analysis</div>
-
+            <div class="project-card">
               
                 
-                  
-
-                  <div class="subproject-item">
-
-                    
-                      
-                      
-                        
-                      
-                      <div class="subproject-fig"
-                            style="background-image:url('/topics/mri.png');">
-                      </div>
-                    
-
-                    <div>
-                      
-                        <a class="subproject-title"
-                            href="https://arxiv.org/abs/xxxx.xxxxx"
-                            target="_blank" rel="noopener">
-                          Paper 1 Title
-                        </a>
-                      
-
-                      
-                        <div class="subproject-desc">abstract</div>
-                      
-                    </div>
-
-                  </div>
                 
-                  
-
-                  <div class="subproject-item">
-
-                    
-                      
-                      
-                        
-                      
-                      <div class="subproject-fig"
-                            style="background-image:url('/topics/mri.png');">
-                      </div>
-                    
-
-                    <div>
-                      
-                        <a class="subproject-title"
-                            href="https://doi.org/xx.xxxx/xxxxx"
-                            target="_blank" rel="noopener">
-                          Paper 2 Title
-                        </a>
-                      
-
-                      
-                        <div class="subproject-desc">abstract</div>
-                      
-                    </div>
-
-                  </div>
-                
+                <div class="project-cover" style="background-image: url('/topics/mri.png');"></div>
               
-
+              <a href="/research/biomedical_image/cancer-analysis/" class="research-title">Cancer Analysis</a>
             </div>
           
-            
-            <div class="project-box">
-
-              <div class="project-title">Brain MRI</div>
-
+            <div class="project-card">
               
                 
-                  
-
-                  <div class="subproject-item">
-
-                    
-                      
-                      
-                        
-                      
-                      <div class="subproject-fig"
-                            style="background-image:url('/topics/mri.png');">
-                      </div>
-                    
-
-                    <div>
-                      
-                        <a class="subproject-title"
-                            href="https://..."
-                            target="_blank" rel="noopener">
-                          Paper A Title
-                        </a>
-                      
-
-                      
-                        <div class="subproject-desc">abstract</div>
-                      
-                    </div>
-
-                  </div>
                 
+                <div class="project-cover" style="background-image: url('/topics/mri.png');"></div>
               
-
+              <a href="/research/biomedical_image/brain-mri/" class="research-title">Brain MRI</a>
             </div>
           
-            
-            <div class="project-box">
-
-              <div class="project-title">Anatomical and Lesion Segmentation</div>
-
+            <div class="project-card">
               
                 
-                  
-
-                  <div class="subproject-item">
-
-                    
-                      
-                      
-                        
-                      
-                      <div class="subproject-fig"
-                            style="background-image:url('/topics/mri.png');">
-                      </div>
-                    
-
-                    <div>
-                      
-                        <a class="subproject-title"
-                            href="https://..."
-                            target="_blank" rel="noopener">
-                          Paper X Title
-                        </a>
-                      
-
-                      
-                        <div class="subproject-desc">abstract</div>
-                      
-                    </div>
-
-                  </div>
                 
+                <div class="project-cover" style="background-image: url('/topics/mri.png');"></div>
               
-
+              <a href="/research/biomedical_image/anatomical-and-lesion-segmentation/" class="research-title">Anatomical and Lesion Segmentation</a>
             </div>
           
-
         </div>
       
 
-    </div>
-
+      </div>
+    
   
+
+      </div>
 
 </div>
 

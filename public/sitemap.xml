@@ -10,6 +10,9 @@
     <loc>http://localhost:1313/projects/mri/</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/research/biomedical_image/cancer-analysis/</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/projects/imb/</loc>
   </url>
   <url>
@@ -49,7 +52,13 @@
     <loc>http://localhost:1313/members/faculty/morri/</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/research/biomedical_image/brain-mri/</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/projects/enh/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/biomedical_image/anatomical-and-lesion-segmentation/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/members/alumni/cong/</loc>
@@ -71,6 +80,9 @@
   </url>
   <url>
     <loc>http://localhost:1313/members/students/haonan/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/members/students/jiaqi/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/members/students/qingcheng/</loc>

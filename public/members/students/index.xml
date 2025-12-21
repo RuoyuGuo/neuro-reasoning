@@ -17,6 +17,13 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/members/students/jiaqi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/members/students/jiaqi/</guid>
+      <description>&lt;p&gt;Hi, I am currently a PhD candidate supervised by Prof. Pagnucco and Prof. Song. My current research interests include safety of large language models (LLMs), explainability of LLMs, parameter efficient fine-tuning, and model merging. I am also interested in studying these aspects in multimodal models, particularly vision–language models.&lt;/p&gt;&#xA;&lt;p&gt;Previously, I completed a Bachelor of Science in Computer Science at UNSW, and conducted honours research project under the supervision of Prof. Pagnucco.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/members/students/qingcheng/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/members/students/qingcheng/</guid>
