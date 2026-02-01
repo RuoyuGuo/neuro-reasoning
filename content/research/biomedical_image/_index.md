@@ -5,9 +5,9 @@ intro: "this is introduction..."
 
 project:
 - title: "Cancer anaysis" 
-  icon: "topics/mri.png" 
+  icon: "topics/cancer-analysis.png" 
 - title: "Brain MRI" 
-  icon: "topics/mri.png" 
+  icon: "topics/brain-mri.png" 
 - title: "Anatomical and Lesion Segmentation" 
-  icon: "topics/mri.png"
+  icon: "topics/lesion-seg.png"
 ---

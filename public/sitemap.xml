@@ -55,6 +55,9 @@
     <loc>http://localhost:1313/research/biomedical_image/brain-mri/</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/research/computer_vision_application/</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/projects/enh/</loc>
   </url>
   <url>

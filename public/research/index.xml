@@ -15,5 +15,19 @@
       <guid>http://localhost:1313/research/biomedical_image/</guid>
       <description>Biomedical Imaging</description>
     </item>
+    <item>
+      <title>Computer Vision and Robotics Applications</title>
+      <link>http://localhost:1313/research/computer_vision_application/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/computer_vision_application/</guid>
+      <description>Computer Vision and Robotics Applications</description>
+    </item>
+    <item>
+      <title>AI Trustworthiness</title>
+      <link>http://localhost:1313/research/trustworthiness/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/trustworthiness/</guid>
+      <description>AI Trustworthiness</description>
+    </item>
   </channel>
 </rss>
