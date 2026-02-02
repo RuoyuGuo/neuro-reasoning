@@ -1,15 +1,23 @@
 ---
 title: "AI Trustworthiness"
 weight: 30
-intro: "this is introduction..."
+intro: #"this is introduction..."
 
 project:
 - title: "Interpretability" 
-  icon: "topics/cancer-analysis.png" 
+  icon: "topics/interpretability.png" 
+  slug: "interpretability"
+
 - title: "Fairness, Debiasing and Robustness" 
-  icon: "topics/brain-mri.png" 
+  icon: "topics/fairness.png" 
+  slug: "fairness"
+
 - title: "Truthfulness" 
-  icon: "topics/lesion-seg.png"
+  icon: "topics/truthfulness.png"
+  slug: "truthfulness"
+
 - title: "Machine Ethics" 
-  icon: "topics/lesion-seg.png"
----
+  icon: "topics/machine-ethics.png"
+  slug: "ethics"
+  
+--- 

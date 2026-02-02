@@ -92,7 +92,7 @@
   }
 
     .project-card{
-    height: 200px;
+    height: 240px;
     border-radius: 12px;
     position: relative;
     overflow: hidden;
@@ -104,7 +104,7 @@
     .project-cover{
         position: absolute;
         inset: 0;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
         }
@@ -147,44 +147,76 @@
     {{ .Content }}
   </div>
 
+{{/* Get the top-level "research" section */}}
 {{ $research := site.GetPage "section" "research" }}
-  {{ if $research }}
-    {{ range $theme := $research.Pages.ByWeight }}
-      <div class="theme-block">
+{{ if $research }}
 
-        <div class="theme-title-row">
-          <div class="theme-title-text">
-            <span class="theme-title-main">
-              {{ $theme.Title }}
+  {{/* Iterate over large topics (sections) under research */}}
+  {{ range $theme := $research.Sections.ByWeight }}
+
+    <div class="theme-block">
+
+      {{/* Theme title and optional introduction */}}
+      <div class="theme-title-row">
+        <div class="theme-title-text">
+          <span class="theme-title-main">
+            {{ $theme.Title }}
+          </span>
+          {{ with $theme.Params.intro }}
+            <span class="theme-title-intro">
+              {{ . }}
             </span>
-            {{ with $theme.Params.intro }}
-              <span class="theme-title-intro">
-                {{ . }}
-              </span>
-            {{ end }}
-          </div>
+          {{ end }}
         </div>
+      </div>
 
-      {{ $projects := $theme.RegularPages.ByWeight }}
+      {{/* Read project list from the theme's _index.md */}}
+      {{ $projects := $theme.Params.project | default (slice) }}
+
       {{ if gt (len $projects) 0 }}
         <div class="projects-grid">
+
           {{ range $p := $projects }}
             <div class="project-card">
-              {{ with $p.Params.icon }}
+
+              {{/* Render project cover image if defined */}}
+              {{ with $p.icon }}
                 {{ $src := . }}
-                {{ if not (hasPrefix $src "/") }}{{ $src = printf "/%s" $src }}{{ end }}
-                <div class="project-cover" style="background-image: url('{{ $src | safeURL }}');"></div>
+                {{ if not (hasPrefix $src "/") }}
+                  {{ $src = printf "/%s" $src }}
+                {{ end }}
+                <div
+                  class="project-cover"
+                  style="background-image: url('{{ $src | safeURL }}');">
+                </div>
               {{ end }}
-              <a href="{{ $p.RelPermalink }}" class="research-title">{{ $p.Title }}</a>
+
+              {{/* Project title */}}
+              {{ $title := $p.title | default "Untitled" }}
+
+              {{/* Build link to the corresponding small-topic page */}}
+              {{ with $p.slug }}
+                <a
+                  href="{{ printf "%s%s/" $theme.RelPermalink . | safeURL }}"
+                  class="research-title">
+                  {{ $title }}
+                </a>
+              {{ else }}
+                <span class="research-title">
+                  {{ $title }}
+                </span>
+              {{ end }}
+
             </div>
           {{ end }}
+
         </div>
       {{ end }}
 
-      </div>
-    {{ end }}
-  {{ end }}
+    </div>
 
+  {{ end }}
+{{ end }}
       </div>
 
 </div>

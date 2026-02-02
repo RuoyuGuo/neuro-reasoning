@@ -61,6 +61,9 @@
     <loc>http://localhost:1313/projects/enh/</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/research/trustworthiness/</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/research/biomedical_image/anatomical-and-lesion-segmentation/</loc>
   </url>
   <url>
