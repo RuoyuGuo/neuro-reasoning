@@ -6,7 +6,7 @@ layout: "home"
 intro_paragraphs:
   - "Our lab focuses on Computer Vision, Deep Learning, Machine Learning and many general topics of Artificial Intelligence."
   - "Feel free to explore our recent projects, publications, and open-source tools."
-  - "Please see below for application-related information."
+  # - "Please see below for application-related information."
 intro_image: "images/k17-front-view.jpg"
 intro_caption: "Figure: Overview of our research areas"
 

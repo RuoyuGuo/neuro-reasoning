@@ -1,6 +1,6 @@
 ---
 # content
-name: "Kunzi Xie (Winnie)"
+name: "Kunzi (Winnie) Xie "
 description: "Medical image segmentation; Image registration; Microscopy analysis;"
 avatar: "avatar/xiekunzi.jpg"
 group: "alumni"

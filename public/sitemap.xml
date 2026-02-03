@@ -100,6 +100,9 @@
     <loc>http://localhost:1313/research/biomedical_image/anatomical-and-lesion-segmentation/</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/members/alumni/ari_info/</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/members/alumni/cong/</loc>
   </url>
   <url>

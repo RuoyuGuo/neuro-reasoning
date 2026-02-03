@@ -33,7 +33,7 @@ research_topic:                              #Required
   - name: Computer vision
 ---
 
-#Required
+<!-- #Required -->
 Hi, I'm Shenyang, a PhD student supervised by Yang.
 
 My research interests include object detection, computer vision, data augmentation, domain adaptation and few-shot learning. My current work focuses on deep learning based rip current detection methods, including dataset construction and detector design.

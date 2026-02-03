@@ -1,6 +1,6 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'Deep Learning Lab'
+title = 'Expo AI Research Lab'
 theme = 'FixIt'
 
 [params]

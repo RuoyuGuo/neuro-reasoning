@@ -1,6 +1,6 @@
 ---
 # content
-name: "Priyanka"
+name: "Priyanka Rana"
 description: "Data imbalance, classification, multilabel"
 avatar: "avatar/default.jpg"
 group: "alumni"

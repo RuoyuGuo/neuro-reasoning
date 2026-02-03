@@ -35,9 +35,9 @@ research_topic:                              #Required
   - name: "Inspection Robot in Hazardous Environment"
 ---
 
-#Required
+<!-- #Required
 Write an introduction about yourself here.  
-**Markdown** formatting is supported
+**Markdown** formatting is supported -->
 
 Hi, my name is Ray. I completed my PhD under the supervision of Morri and Yang in 2024.
 My main research topic during my studies was machine ethics, particularly top-down machine ethics using epistemic logic. I explored various interpretations of ethics proposed by different ethicists and philosophers, and implemented them using formal methods across a range of scenarios.

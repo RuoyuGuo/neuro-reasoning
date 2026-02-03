@@ -12,7 +12,7 @@ subprojects:
 - title: "Deep multimodal saliency parcellation of cerebellar pathways: Linking microstructure and individual function through explainable multitask learning" 
   img: "subtopics/Deep multimodal saliency parcellation.png" 
   url: "https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.70008"
-  abstract: "this is abstract abstract abstract abstract abstract abstract abstract x this is abstract abstract abstract abstract abstract abstract abstract x this is abstract abstract abstract abstract abstract abstract abstract x this is abstract abstract abstract abstract abstract abstract abstract x"
+  abstract: "In this work, we propose a multimodal data-driven method for cerebellar pathway parcellation, which incorporates both measures of microstructure and connectivity, and measures of individual functional performance. Our method involves first training a multitask deep network to predict various cognitive and motor measures from a set of fibre tract structural features. The importance of each structural feature for predicting each functional measure is then computed, resulting in a set of structure–function saliency values that are clustered to parcellate cerebellar pathways. We refer to our method as Deep Multimodal Saliency Parcellation (DeepMSP), as it computes the saliency of structural measures for predicting cognitive and motor functional performance, with these saliencies being applied to the task of parcellation."
 
 - title: "TractGeoNet: A geometric deep learning framework for pointwise analysis of tract microstructure to predict language assessment performance" 
   img: "subtopics/TractGeoNet.jpg"  

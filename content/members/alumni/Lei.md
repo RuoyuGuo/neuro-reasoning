@@ -32,5 +32,5 @@ research_topic:                              #Required
   - name: "Generative Models"
 ---
 
-#Required
+<!-- #Required -->
 I received my PhD from UNSW Sydney in 2024, specializing in computer vision and machine learning

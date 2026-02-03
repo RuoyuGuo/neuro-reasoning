@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Our Students - Deep Learning Lab</title>
+    <title>Our Students - Expo AI Research Lab</title>
     <link>http://localhost:1313/members/students/</link>
-    <description>Deep Learning Lab</description>
+    <description>Expo AI Research Lab</description>
     <generator>Hugo 0.148.2 &amp; FixIt v0.4.0-alpha-20250721024521-a1cd700b</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
@@ -41,7 +41,7 @@
       <link>http://localhost:1313/members/students/shenyang_qian/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/members/students/shenyang_qian/</guid>
-      <description>&lt;p&gt;#Required&#xA;Hi, I&amp;rsquo;m Shenyang, a PhD student supervised by Yang.&lt;/p&gt;&#xA;&lt;p&gt;My research interests include object detection, computer vision, data augmentation, domain adaptation and few-shot learning. My current work focuses on deep learning based rip current detection methods, including dataset construction and detector design.&lt;/p&gt;&#xA;&lt;p&gt;Perviously, I completed a Master&amp;rsquo;s degree in Information Technology from UNSW, during which I undertook both COMP9991 and COMP9993 research projects supervised by Yang. These projects are related to few-shot learning in medical images segmentation.&lt;/p&gt;</description>
+      <description>&lt;!-- #Required --&gt;&#xA;&lt;p&gt;Hi, I&amp;rsquo;m Shenyang, a PhD student supervised by Yang.&lt;/p&gt;&#xA;&lt;p&gt;My research interests include object detection, computer vision, data augmentation, domain adaptation and few-shot learning. My current work focuses on deep learning based rip current detection methods, including dataset construction and detector design.&lt;/p&gt;&#xA;&lt;p&gt;Perviously, I completed a Master&amp;rsquo;s degree in Information Technology from UNSW, during which I undertook both COMP9991 and COMP9993 research projects supervised by Yang. These projects are related to few-shot learning in medical images segmentation.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

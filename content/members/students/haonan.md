@@ -1,6 +1,6 @@
 ---
 # content (All required)
-name: "Haonan Zhong (Echo)"
+name: "Haonan (Echo) Zhong "
 description: "NaN"
 avatar: "avatar/Haonan_photo.jpg" # Ignore this
 group: "phd" # Choose from: phd | mphil | alumni

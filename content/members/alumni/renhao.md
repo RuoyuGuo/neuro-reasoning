@@ -38,7 +38,7 @@ research_topic:                              #Required
     class: ad
 ---
 
-#Required
+<!-- #Required -->
 
 I have received his PhD degree in Computer Science from the University of New South Wales in February 2025. My PhD study primarily focuses on vision-based human trajectory prediction and computer vision. 
 

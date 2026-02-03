@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>Deep Learning Lab</title><meta name="author" content="">
+    <title>Expo AI Research Lab</title><meta name="author" content="">
 <meta name="description" content="">
   <meta itemprop="name" content="Interpretability"><meta property="og:url" content="http://localhost:1313/research/trustworthiness/interpretability/">
-  <meta property="og:site_name" content="Deep Learning Lab">
+  <meta property="og:site_name" content="Expo AI Research Lab">
   <meta property="og:title" content="Interpretability">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
@@ -17,7 +17,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Interpretability">
 <meta name="application-name" content="FixIt">
-<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/ai16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="http://localhost:1313/research/trustworthiness/interpretability/" title="Interpretability - Deep Learning Lab" /><link rel="prev" type="text/html" href="http://localhost:1313/projects/maceth/" title="Machine Ethics" /><link rel="next" type="text/html" href="http://localhost:1313/research/computer_vision_application/image-gen-enh/" title="Image Generation and Enhancement" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/ai16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="http://localhost:1313/research/trustworthiness/interpretability/" title="Interpretability - Expo AI Research Lab" /><link rel="prev" type="text/html" href="http://localhost:1313/projects/maceth/" title="Machine Ethics" /><link rel="next" type="text/html" href="http://localhost:1313/research/computer_vision_application/image-gen-enh/" title="Image Generation and Enhancement" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
   {
@@ -40,7 +40,7 @@
   <body data-header-desktop="sticky" data-header-mobile="auto"><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper">
     <div class="header-title">
-      <a href="/" title="Deep Learning Lab"><span class="header-title-text">Deep Learning Lab</span></a><span class="header-subtitle"></span></div>
+      <a href="/" title="Expo AI Research Lab"><span class="header-title-text">Expo AI Research Lab</span></a><span class="header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a class="menu-link" href="/news">News</a></li><li class="menu-item has-children">
@@ -62,7 +62,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="Deep Learning Lab"><span class="header-title-text">Deep Learning Lab</span></a><span class="header-subtitle"></span></div>
+        <a href="/" title="Expo AI Research Lab"><span class="header-title-text">Expo AI Research Lab</span></a><span class="header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -136,6 +136,8 @@
     background: rgba(66, 153, 225, 0.05);
     box-shadow: 0 10px 28px rgba(17, 24, 39, 0.06);
     align-items: start;
+
+    overflow: visible; 
   }
 
    
@@ -143,22 +145,30 @@
     width: 600px;
     height: 380px;
     border-radius: 16px;
-    overflow: hidden;
+     
     background: rgba(17, 24, 39, 0.04);
     border: 1px solid rgba(66, 153, 225, 0.18);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+
+    overflow: visible; 
+    position: relative; 
   }
 
   .subproject-fig img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    transform-origin: center center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .subproject-fig:hover img{
+    transform: scale(1.25);
+    z-index: 50;
+    box-shadow: 0 18px 50px rgba(0,0,0,0.25);
   }
 
    
