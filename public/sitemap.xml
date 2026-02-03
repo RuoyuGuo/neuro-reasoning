@@ -4,6 +4,15 @@
     <loc>http://localhost:1313/members/faculty/yang/</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/research/computer_vision_application/act-plan/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/computer_vision_application/act-recognition/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/computer_vision_application/anom-detect/</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/research/biomedical_image/</loc>
   </url>
   <url>
@@ -22,13 +31,28 @@
     <loc>http://localhost:1313/projects/cva/</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/research/trustworthiness/fairness/</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/projects/gm/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/computer_vision_application/grain-insp/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/projects/stnorm/</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/research/computer_vision_application/image-gen-enh/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/trustworthiness/interpretability/</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/projects/maceth/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/trustworthiness/ethics/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/projects/mia/</loc>
@@ -46,7 +70,16 @@
     <loc>http://localhost:1313/projects/rip/</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/research/computer_vision_application/rip-detect/</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/projects/tts/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/computer_vision_application/traj-pred/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/trustworthiness/truthfulness/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/members/faculty/morri/</loc>

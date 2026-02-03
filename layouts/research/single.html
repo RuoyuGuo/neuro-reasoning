@@ -61,6 +61,9 @@
     overflow: hidden;
     background: rgba(17, 24, 39, 0.04);
     border: 1px solid rgba(66, 153, 225, 0.18);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .subproject-fig img{
@@ -68,6 +71,9 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   /* ===== text block ===== */
@@ -138,7 +144,6 @@
     <div class="subproject-list">
       {{ range $sp := $subs }}
         <div class="subproject-row">
-
           <div class="subproject-fig">
             {{ with $sp.img }}
               {{ $res := $.Resources.GetMatch . }}
@@ -155,7 +160,7 @@
           <div class="subproject-body">
             {{ with $sp.url }}
               <a class="paper-title" href="{{ . | safeURL }}" target="_blank" rel="noopener">
-                {{ $sp.title }}
+                {{ $sp.title }} | Link in here
               </a>
             {{ else }}
               <span class="paper-title" style="cursor: default; border-bottom-style: dashed;">
