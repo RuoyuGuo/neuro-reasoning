@@ -16,9 +16,6 @@
     <loc>http://localhost:1313/research/computer_vision_application/anom-detect/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/research/biomedical_image/</loc>
-  </url>
-  <url>
     <loc>http://localhost:1313/projects/mri/</loc>
   </url>
   <url>
@@ -101,6 +98,9 @@
   </url>
   <url>
     <loc>http://localhost:1313/research/biomedical_image/anatomical-and-lesion-segmentation/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/biomedical_image/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/members/alumni/ari_info/</loc>

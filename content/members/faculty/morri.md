@@ -1,5 +1,5 @@
 ---
-name: "Maurice Pagnucco"
+name: "Maurice Pagnucco FTSE"
 position: "Professor & Deputy Dean (Education)"
 # description: "Works on robust segmentation with PEFT."
 avatar: "avatar/morri.jpg"
