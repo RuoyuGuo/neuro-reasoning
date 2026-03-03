@@ -3,10 +3,11 @@
 name: "Ruoyu Guo"
 description: "Do we really need GPUs for deep learning?"
 avatar: "avatar/ruoyu.png"
-group: "phd"
+group: "fellow"
 enrol: 202205
+weight: 10
 
-position: "PhD Student"
+position: "Postdoctoral Research Fellow"
 
 # personal page
 google_scholar: "https://scholar.google.com.au/citations?user=z6IrExMAAAAJ&hl=en"

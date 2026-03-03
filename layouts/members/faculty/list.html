@@ -1,0 +1,58 @@
+{{- define "content" -}}
+<div style="display: flex; flex-direction: column; max-width: 1200px; margin: 2rem auto 5rem auto;">
+
+  <h2 style="text-align: center; margin-bottom: 2rem;">
+    {{ .Title }}
+  </h2>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 3rem;  margin-top: 3rem">
+    {{ range sort (where .Pages "Params.group" "faculty") "Params.weight" }}
+      <div style="text-align: center; max-width: 220px;">
+        <img src="/{{ .Params.avatar }}" alt="{{ .Params.name }}"
+             style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover;">
+        <h3 style="margin: 0.5rem 0; color: #88aedc;">
+          <a  href="{{ .RelPermalink }}">  
+            {{ .Params.name }}
+          </a> 
+        </h3>
+        <p style="font-size: 0.95rem; color: #555; font-weight: 500;">
+          {{ .Params.position }}
+        </p>
+        {{ with .Params.description }}
+          <p style="font-size: 0.85rem; color: #777;">{{ . }}</p>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+
+  <!-- Research fellow section -->
+    <!-- <h2 style="text-align: center; margin-t: 2rem;">
+    Research Fellows
+  </h2> -->
+  <h2 style="text-align: center; margin-top: 2rem">
+    Research Fellows
+  </h2>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 3rem;  margin-top: 3rem">
+    {{ range sort (where .Pages "Params.group" "fellow") "Params.weight" }}
+      <div style="text-align: center; max-width: 220px;">
+        <img src="/{{ .Params.avatar }}" alt="{{ .Params.name }}"
+             style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover;">
+        <h3 style="margin: 0.5rem 0; color: #88aedc;">
+          <a  href="{{ .RelPermalink }}">  
+            {{ .Params.name }}
+          </a> 
+        </h3>
+        <p style="font-size: 0.95rem; color: #555; font-weight: 500;">
+          {{ .Params.position }}
+        </p>
+        <!-- {{ with .Params.description }}
+          <p style="font-size: 0.85rem; color: #777;">{{ . }}</p>
+        {{ end }} -->
+      </div>
+    {{ end }}
+  </div>
+
+
+</div>
+{{- end -}}

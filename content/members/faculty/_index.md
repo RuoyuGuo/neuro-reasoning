@@ -1,5 +1,5 @@
 ---
-title: "Our Faculty"
+title: "Our Academics"
 # layout: 'tt'
 ---
 

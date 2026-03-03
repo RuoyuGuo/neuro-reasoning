@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/members/faculty/ruoyu/</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/members/faculty/yang/</loc>
   </url>
   <url>
@@ -130,9 +133,6 @@
     <loc>http://localhost:1313/members/students/qingcheng/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/members/students/ruoyu/</loc>
-  </url>
-  <url>
     <loc>http://localhost:1313/members/students/shenyang_qian/</loc>
   </url>
   <url>
@@ -163,10 +163,13 @@
     <loc>http://localhost:1313/news/</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/members/faculty/</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/members/alumni/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/members/faculty/</loc>
+    <loc>http://localhost:1313/members/collaborators/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/projects/</loc>

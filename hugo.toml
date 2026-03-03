@@ -29,7 +29,7 @@ theme = 'FixIt'
     [[menu.main]]
     identifier = "faculty"
     parent = "members"
-    name = "Faculty"
+    name = "Academics"
     url = 'members/faculty/'
     weight = 21
 
@@ -41,11 +41,18 @@ theme = 'FixIt'
     weight = 22
 
     [[menu.main]]
+    identifier = "collaborators"
+    parent = "members"
+    name = "Collaborators"
+    url = 'members/collaborators/'
+    weight = 23
+
+    [[menu.main]]
     identifier = "alumni"
     parent = "members"
     name = "Alumni"
     url = 'members/alumni/'
-    weight = 23
+    weight = 24
 
     [[menu.main]]
     identifier = "research"

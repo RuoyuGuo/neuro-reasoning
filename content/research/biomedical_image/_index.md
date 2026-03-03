@@ -1,6 +1,6 @@
 ---
 title: "Biomedical Imaging"
-weight: 10
+weight: 9999
 intro: #"this is introduction..."
 
 project:
