@@ -4,5 +4,5 @@ intro_paragraphs: This is intro paragraphs
 # layout: "home"
 ---
 
-Our research explores a wide range of topics in computer vision and medical AI, with an emphasis on building reliable and impactful learning systems. Here, you will find an overview of our projects, academic outputs, and technical explorations, including slides and publications.
+Our research covers a wide range of topics in multimodal AI, with a focus on developing robust and generalisable learning and reasoning systems. Here are some examples of our research projects.
 

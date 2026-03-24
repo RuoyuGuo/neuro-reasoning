@@ -15,7 +15,7 @@
     display: block;           
     margin-top: auto;        
   }
-
+Git
   .research-title:hover {
     background: rgba(0, 0, 0, 0.9);
     transform: scale(1.03);
@@ -27,7 +27,27 @@
 
   <h2 style="text-align: center; margin-bottom: 2rem;">{{ .Title }}</h2>
 
-<div style="text-align: left; max-width: 1000px; margin: 0 auto;">
-  {{ .Content }}
-</div>
+  {{ with .Params.news }}
+    <div style="max-width: 1000px; margin: 3rem auto 0 auto;">
+
+      {{ range . }}
+        <!-- Group Title -->
+        <h3 style="margin-top: 2rem; margin-bottom: 1rem;">
+          {{ .title }}
+        </h3>
+
+        <!-- Bullet List -->
+        <ul style="padding-left: 1.2rem; line-height: 1.8;">
+          {{ range .items }}
+            <li style="margin-bottom: 0.6rem;">
+              {{ . }}
+            </li>
+          {{ end }}
+        </ul>
+
+      {{ end }}
+
+    </div>
+  {{ end }}
+
 {{ end }}

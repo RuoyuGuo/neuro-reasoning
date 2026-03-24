@@ -4,9 +4,9 @@ layout: "home"
 
 
 intro_paragraphs:
-  - "Our lab focuses on Computer Vision, Deep Learning, Machine Learning and many general topics of Artificial Intelligence."
-  - "Feel free to explore our recent projects, publications, and open-source tools."
-  # - "Please see below for application-related information."
+  - "Neuro-Reasoning Lab focuses on developing intelligent systems that can not only learn from data, but also understand, reason and act in complex environments. We explore both deep learning and symbolic AI approaches to develop methods that can make sense of rich, multimodal information and support reliable decision-making."
+  - "Our work tackles key challenges such as limited data, model transparency, bias, robustness and generalisability, with a strong emphasis on trustworthiness and explainability. By advancing both learning and reasoning, we aim to create systems that operate reliably in the real world, with applications spanning healthcare, autonomous robotics and smart environments."
+
 intro_image: "images/k17-front-view.jpg"
 intro_caption: "Figure: Overview of our research areas"
 
