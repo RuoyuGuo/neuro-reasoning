@@ -18,7 +18,7 @@
     <!-- Right Image -->
     <div style="flex: 1; min-width: 300px; text-align: center;">
       {{ with .Params.intro_image }}
-        <img src="/{{ . }}" alt="Intro image"
+        <img src="{{ . | relURL }}" alt="Intro image"
              style="max-width: 100%; height: auto; border-radius: 12px;" />
       {{ end }}
       {{ with .Params.intro_caption }}
