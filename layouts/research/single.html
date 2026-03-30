@@ -158,7 +158,7 @@
     <div class="subproject-list">
       {{ range $sp := $subs }}
         <div class="subproject-row">
-          <div class="subproject-fig">
+          <!-- <div class="subproject-fig">
             {{ with $sp.img }}
               {{ $res := $.Resources.GetMatch . }}
               {{ if $res }}
@@ -168,6 +168,11 @@
                 {{ if not (hasPrefix $src "/") }}{{ $src = printf "/%s" $src }}{{ end }}
                 <img src="{{ $src | safeURL }}" alt="{{ $sp.title }}">
               {{ end }}
+            {{ end }}
+          </div> -->
+          <div class="subproject-fig">
+            {{ with $sp.img }}
+              <img src="{{ . | relURL }}" alt="{{ $sp.title }}">
             {{ end }}
           </div>
 
