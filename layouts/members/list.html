@@ -8,7 +8,7 @@
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 3rem;  margin-top: 3rem">
     {{ range sort .Pages "Params.weight" }}
       <div style="text-align: center; max-width: 220px;">
-        <img src="/{{ .Params.avatar | relURL }}" alt="{{ .Params.name }}"
+        <img src="{{ .Params.avatar | relURL }}" alt="{{ .Params.name }}"
              style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover;">
         <h3 style="margin: 0.5rem 0; color: #88aedc;">
           <a  href="{{ .RelPermalink }}">  
