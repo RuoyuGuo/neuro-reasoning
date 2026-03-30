@@ -7,6 +7,9 @@ theme = 'FixIt'
   [params.app]
     svgFavicon = "/ai16x16.png"
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
 
 [markup]
   [markup.goldmark]
