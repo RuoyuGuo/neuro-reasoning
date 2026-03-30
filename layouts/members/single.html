@@ -5,7 +5,7 @@
   "google_scholar" (dict "icon" "google_scholar"    )
   "orcid"      (dict "icon" "fa-brands fa-orcid fa-xl"                 "colour" "black"   )
   "linkedin"        (dict "icon" "fa-brands fa-linkedin fa-xl"         "colour" "#0077B5"     )
-  "dblp"        (dict "icon" "dblp"            )                        
+  "dblp"        (dict "icon" "dblp"            )                       
   "github"             (dict "icon" "fa-brands fa-github fa-xl"       "colour" "black"     )
   "personal_page" (dict "icon" "fa-solid fa-user fa-xl"          "colour" "tomato"     )
 }}
@@ -15,7 +15,7 @@
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-image: url('/icons/google_scholar.svg');
+  background-image: url('{{ "icons/google_scholar.svg" | relURL }}');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -24,7 +24,7 @@
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-image: url('/icons/dblp.svg');
+  background-image: url('{{ "icons/dblp.svg" | relURL }}');
   background-size: cover;
   background-repeat: no-repeat;
 }
