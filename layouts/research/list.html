@@ -181,13 +181,9 @@
 
               {{/* Render project cover image if defined */}}
               {{ with $p.icon }}
-                {{ $src := . }}
-                {{ if not (hasPrefix $src "/") }}
-                  {{ $src = printf "/%s" $src }}
-                {{ end }}
                 <div
                   class="project-cover"
-                  style="background-image: url('{{ $src | relURL }}');">
+                  style="background-image: url('{{ . | relURL }}');">
                 </div>
               {{ end }}
 
