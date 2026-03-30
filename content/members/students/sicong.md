@@ -30,7 +30,7 @@ research_topic:
     class: rn
 
   - name: medical image segmentation
-    class: mediseg
+    class: seg
 
   - name: Vision language model
     class: vlm

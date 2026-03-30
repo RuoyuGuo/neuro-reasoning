@@ -27,10 +27,15 @@ office: "K17-306"                     #Required
 
 research_topic:                              #Required
   - name: Rip current detection
+    class: rcd
   - name: Data augmentation
+    class: daug
   - name: Domain adaptation
+    class: da
   - name: Few shot learning
+    class: fsl
   - name: Computer vision
+    class: cv
 ---
 
 <!-- #Required -->

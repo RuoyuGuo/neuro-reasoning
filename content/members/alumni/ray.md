@@ -28,11 +28,16 @@ office: "Manchester, United Kingdom"                     #Required
 #   - 3D Image generation
 
 research_topic:                              #Required
-  - name: "Top-down Machine Ethics"
-  - name: "Epistemic Logic"
-  - name: "Verifiable Agent Architecture"
-  - name: "Heterogenous Multi-agent Pattern"
-  - name: "Inspection Robot in Hazardous Environment"
+  - name: Top-down Machine Ethics
+    class: tme
+  - name: Epistemic Logic
+    class: el
+  - name: Verifiable Agent Architecture
+    class: vaa
+  - name: Heterogenous Multi-agent Pattern
+    class: hmp
+  - name: Inspection Robot in Hazardous Environment
+    class: irhe
 ---
 
 <!-- #Required

@@ -26,15 +26,15 @@ office: "iCinema Centre Room 601, Level 6 Civil Engineering Bldg. (H20) Gate 11 
 #   - 3D Image generation
 
 research_topic:                              #Required
-  - name: "Wildfire Modelling"
-    class: wildfire
-  - name: "Trajectory Prediction"
-    class: trajectory-prediction
-  - name: "Semantic Segmentation"
-    class: semseg
-  - name: "Domain Adaptation"
+  - name: Wildfire Modelling
+    class: wm
+  - name: Trajectory Prediction
+    class: tp
+  - name: Semantic Segmentation
+    class: seg
+  - name: Domain Adaptation
     class: da
-  - name: "Autonomous Driving"
+  - name: Autonomous Driving
     class: ad
 ---
 

@@ -36,7 +36,7 @@ research_topic:
     class: enh
 
   - name: Nuclei segmentation
-    class: nuseg
+    class: seg
 
   - name: Domain generalisation
     class: dg

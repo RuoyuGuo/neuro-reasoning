@@ -30,10 +30,14 @@ office: "Canberra"                     #Required
 #   - 3D Image generation
 
 research_topic:                              #Required
-  - name: "White matter tract segmentation"
-  - name: "Cerebellar pathway parcellation"
-  - name: "Anomaly Detection"
-  - name: "Network Compression"
+  - name: White matter tract segmentation
+    class: wmts
+  - name: Cerebellar pathway parcellation
+    class: cpp
+  - name: Anomaly Detection
+    class: ad
+  - name: Network Compression
+    class: nc
 ---
 
 <!-- #Required -->

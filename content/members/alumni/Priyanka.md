@@ -18,9 +18,12 @@ email: "priyanka.rana@mq.edu.au"
 
 # research topic
 research_topic: 
-  - name: "Classification"
-  - name: "Multilabel classification" 
-  - name: "Data imbalance"
+  - name: Classification
+    class: clfy
+  - name: Multilabel classification
+    class: clfy
+  - name: Data imbalance
+    class: di
 
 ---
 

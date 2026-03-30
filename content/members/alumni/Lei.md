@@ -27,9 +27,12 @@ office: "e.g., L3, HTH"                     #Required
 #   - 3D Image generation
 
 research_topic:                              #Required
-  - name: "Medical Image Analysis"
-  - name: "Computer Vision Applications"
-  - name: "Generative Models"
+  - name: Medical Image Analysis
+    class: mia
+  - name: Computer Vision Applications
+    class: cv
+  - name: Generative Models
+    class: gm
 ---
 
 <!-- #Required -->

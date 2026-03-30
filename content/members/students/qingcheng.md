@@ -28,13 +28,13 @@ office: "K17"                     #Required
 
 research_topic:
   - name: Weakly Supervised Medical Image Semantic Segmentation
-    class: wsss
+    class: wsl
 
   - name: AI Safety in Generative Vision Models
-    class: vis_safety
+    class: safety
 
   - name: Continual Learning for Audio Deepfake Detection
-    class: aud_cl
+    class: cl
 ---
 ---
 

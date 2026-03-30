@@ -10,6 +10,9 @@
   "personal_page" (dict "icon" "fa-solid fa-user fa-xl"          "colour" "tomato"     )
 }}
 
+{{ $colors := slice "#e3f2fd" "#fce4ec" "#e8f5e9" "#fff3e0" "#ede7f6" "#f3e5f5" "#e0f7fa" "#f9fbe7" }}
+{{ $shuffled := shuffle $colors }}
+
 <style>
   .google_scholar {
   display: inline-block;
@@ -160,8 +163,12 @@
 
     <!-- Right tags section -->
     <div class="interest_right">
-      {{ range .Params.research_topic }}
-      <div class="interest_items {{ .class }}" style="border-radius: 16px;">{{ .name }}</div>
+      {{ range $i, $topic := .Params.research_topic }}
+        {{ $color := index $shuffled (mod $i (len $shuffled)) }}
+        <div class="interest_items {{ $topic.class }}"
+            style="border-radius: 16px; background-color: {{ $color }};">
+          {{ $topic.name }}
+        </div>
       {{ end }}
     </div>
   </div>

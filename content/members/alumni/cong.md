@@ -20,11 +20,16 @@ email: "thomas.cong@mq.edu.au"                #Required
 office: "Level 6, 75 Talavera Rd, Macquarie Park NSW 2113"                     #Required    
 
 research_topic:                              #Required
-  - name: "WSI Classification"
-  - name: "Stain Normalisation"
-  - name: "Class Imbalanced Learning"
-  - name: "Federated Learning"
-  - name: "Brain tumour MRI segmentation & missing modalities"
+  - name: WSI Classification
+    class: clfy 
+  - name: Stain Normalisation
+    class: sn
+  - name: Class Imbalanced Learning
+    class: cil
+  - name: Federated Learning
+    class: fl
+  - name: Brain tumour MRI segmentation & missing modalities
+    class: seg
 ---
 
 I am Cong Cong, currently a Postdoctoral Fellow at the Australian Institute of Health Innovation, Macquarie University, working with Associate Professor Sidong Liu. Before this, I completed my PhD at UNSW with the thesis “Computer Vision in Histopathology Image Analysis: Preprocessing and Classification”, supervised by Associate Professor Yang Song and Professor Maurice Pagnucco.

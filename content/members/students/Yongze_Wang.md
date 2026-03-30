@@ -18,9 +18,13 @@ office: "418, K17"                     #Required
 # ===== RESEARCH TOPICS (Required) =====
 research_topic:           
   - name: Domain adaptation
+    class: da
   - name: Few-shot learning
+    class: fsl
   - name: Cross-domain few-shot
+    class: fsl
   - name: Image segmentation
+    class: seg
 ---
 
 Hi, I’m a PhD student supervised by Yang and Morri.

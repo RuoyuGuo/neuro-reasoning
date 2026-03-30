@@ -30,11 +30,16 @@ office: "desk 401-01, K17"                     #Required
 #   - 3D Image generation
 
 research_topic:                              #Required
-  - name: "Remote Sensing Change Detection"
-  - name: "Image-to-Image Translation"
-  - name: "Generative Models (GANs/Diffusion)"
-  - name: "Semi-Supervised Learning"
-  - name: "Domain Adaptation"
+  - name: Remote Sensing Change Detection
+    class: rscd
+  - name: Image-to-Image Translation
+    class: gm
+  - name: Generative Models (GANs/Diffusion)
+    class: gm
+  - name: Semi-Supervised Learning
+    class: semil
+  - name: Domain Adaptation
+    class: da
 ---
 
 Hi, I’m Yafei, a Master of Philosophy candidate at the University of New South Wales (UNSW), supervised by Dr. Yang Song and Prof. Erik Meijering.

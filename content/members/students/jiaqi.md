@@ -20,7 +20,7 @@ office: "K17-217"
 # research topic
 research_topic: 
   - name: Large Language Model Explanation
-    class: explanation
+    class: xai
 
   - name: Safety of Large Language Models
     class: safety

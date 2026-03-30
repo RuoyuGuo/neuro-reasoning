@@ -28,7 +28,7 @@ research_topic:
     class: reg
 
   - name: Weakly supervised learning
-    class: weak
+    class: wsl
 
   - name: Histopathology analysis
     class: histo

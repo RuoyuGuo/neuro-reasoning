@@ -27,9 +27,12 @@ office: "J17-510"
 #   - 3D Image generation
 
 research_topic:                              
-  - name: "Computational Machine Ethics"
-  - name: "Automated Planning"
-  - name: "Large Language Models"
+  - name: Computational Machine Ethics
+    class: eth
+  - name: Automated Planning
+    class: ap
+  - name: Large Language Models
+    class: llm
 ---
 
 Hello my reader! I am Tammy, a PhD student supervised by Morri and Yang. Previously, I graduated from Bachelor of Engineering (Honours) (Software) at UNSW where Morri was also my primary supervisor for my honours thesis. Currently, my research focus is on the area of Computational Machine Ethics (check out our survey paper on this!).I am specifically on ethical AI agents.
