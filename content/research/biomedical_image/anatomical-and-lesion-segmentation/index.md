@@ -1,6 +1,5 @@
 ---
 title: "Anatomical and Lesion Segmentation"
-icon: "topics/mri.png" 
 weight: 30
 
 subprojects:

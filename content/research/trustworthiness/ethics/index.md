@@ -1,6 +1,5 @@
 ---
 title: "Machine Ethics"
-icon: "topics/cancer-analysis.png" 
 weight: 10
 
 

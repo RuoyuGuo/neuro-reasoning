@@ -1,6 +1,5 @@
 ---
 title: "Cancer Analysis"
-icon: "topics/cancer-analysis.png" 
 weight: 10
 
 

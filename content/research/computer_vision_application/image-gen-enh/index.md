@@ -1,6 +1,5 @@
 ---
 title: "Image Generation and Enhancement"
-icon: "topics/cancer-analysis.png" 
 weight: 10
 
 

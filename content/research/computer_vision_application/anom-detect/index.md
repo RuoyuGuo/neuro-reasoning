@@ -1,6 +1,5 @@
 ---
 title: "Anomaly Detection"
-icon: "topics/cancer-analysis.png" 
 weight: 10
 
 

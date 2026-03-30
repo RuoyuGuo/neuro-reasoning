@@ -1,6 +1,5 @@
 ---
 title: "Trajectory Prediction"
-icon: "topics/cancer-analysis.png" 
 weight: 10
 
 

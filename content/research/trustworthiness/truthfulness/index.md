@@ -1,6 +1,5 @@
 ---
 title: "Truthfulness"
-icon: "topics/cancer-analysis.png" 
 weight: 10
 
 

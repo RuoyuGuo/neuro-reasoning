@@ -1,6 +1,5 @@
 ---
 title: "Action Planing"
-icon: "topics/cancer-analysis.png" 
 weight: 10
 
 

@@ -1,6 +1,5 @@
 ---
 title: "Interpretability"
-icon: "topics/cancer-analysis.png" 
 weight: 10
 
 

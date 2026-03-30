@@ -1,6 +1,5 @@
 ---
 title: "Action Recognition"
-icon: "topics/cancer-analysis.png" 
 weight: 10
 
 

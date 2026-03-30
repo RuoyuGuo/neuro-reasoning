@@ -1,6 +1,5 @@
 ---
 title: "Brain MRI"
-icon: "topics/mri.png" 
 weight: 20
 
 subprojects:

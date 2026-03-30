@@ -1,6 +1,5 @@
 ---
 title: "Fairness, Debiasing and Robustness"
-icon: "topics/cancer-analysis.png" 
 weight: 10
 
 
