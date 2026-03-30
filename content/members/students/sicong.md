@@ -17,7 +17,7 @@ github: None
 
 
 # personal info
-email: "ruoyu.guo@student.unsw.edu.au"
+email: "sicong.gao@student.unsw.edu.au"
 tel: None
 office: "K17-412"
 
