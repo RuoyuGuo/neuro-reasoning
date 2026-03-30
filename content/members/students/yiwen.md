@@ -39,4 +39,4 @@ My research interests include image reconstruction and editing, biomedical image
 
 In addition, I am interested in foundation models and their adaptation to domain shifts and resource-constrained deployment.
 
-Some of my research topics are outlined below. If you are interested in any of them, I would be happy to discuss further. My publications and outputs can also be found on my **[Google Scholar](https://scholar.google.com/citations?user=YJzQoJYAAAAJ) pages.
+Some of my research topics are outlined below. If you are interested in any of them, I would be happy to discuss further. My publications and outputs can also be found on my **[Google Scholar](https://scholar.google.com/citations?user=YJzQoJYAAAAJ)** pages.
