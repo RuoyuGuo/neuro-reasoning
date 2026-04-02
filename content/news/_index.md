@@ -5,6 +5,8 @@ welcome_intro: Stay up to date with the latest events and achievements from our 
 
 news:
   - date: "03/2026"
+    content: "Presented a poster at NVIDIA's GTC: Reinforcement Learning for Follow-the-Leader Robotic Endoscopic Navigation via Synthetic Depth Data."
+  - date: "03/2026"
     content: " Lab website launched."
 ---
 
