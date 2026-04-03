@@ -7,7 +7,9 @@ news:
   - date: "03/2026"
     content: "Presented a poster at NVIDIA's GTC: Reinforcement Learning for Follow-the-Leader Robotic Endoscopic Navigation via Synthetic Depth Data."
   - date: "02/2026"
-    content: "Presented an invited talk at the 1st World Conference of Computational Neurosurgery: Interpretable Deep Learning for Biomedical Imaging."
+    content: "Our RoboCup@Rescue team now comprises 16 students developing autonomous navigation and detection capabilities using the Unitree Go2 robot."
+  - date: "02/2026"
+    content: "Yang presented an invited talk at the 1st World Conference of Computational Neurosurgery: Interpretable Deep Learning for Biomedical Imaging."
   - date: "02/2026"
     content: " Lab website launched."
 ---

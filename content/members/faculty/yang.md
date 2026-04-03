@@ -27,7 +27,7 @@ personal_page: "https://cgi.cse.unsw.edu.au/~ysong/"
 research_topic: 
     - name: Computer Vision
       class: cv
-    - name: Machine and Deep Learning
+    - name: Deep Learning
       class: dl
     - name: Human-centred and Multimodal AI
       class: hcai
